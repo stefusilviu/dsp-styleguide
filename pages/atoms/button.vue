@@ -1,18 +1,17 @@
 <template>
-  <app-page>
+  <app-page :narrow="true">
 
     <template #page-title>Buttons</template>
 
     <template #page-description>
-      <p>Atoms are the basic building blocks of matter. Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button.</p>
-      <p>Atoms can also include more abstract elements like color palettes, fonts and even more invisible aspects of an interface like animations.</p>
-      <p>Like atoms in nature they're fairly abstract and often not terribly useful on their own. However, they're good as a reference in the context of a pattern library as you can see all your global styles laid out at a glance.</p>
+      <p>Saratoga buttons are the most common call-to-action elements treated as atoms. The button classes can be used on diferent elements which expect user click.</p>
     </template>
 
     <template #page-demo>
-      <button class="button">Button</button>
-      <button class="button ghost">Ghost button</button>
-      <button class="button white">White button</button>
+      <div class="mb-10"><button class="button impact">Impact button</button></div>
+      <div class="mb-10"><button class="button ghost">Ghost button</button></div>
+      <div class="mb-10"><button class="button promo">Promo button</button></div>
+      <div class="mb-10"><button class="button">Text button</button></div>
     </template>
 
     <template #page-code>

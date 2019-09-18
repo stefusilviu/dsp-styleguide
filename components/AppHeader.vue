@@ -1,5 +1,5 @@
 <template>
-    <el-header id="app-header">
-      <h1>DSP Stylguide</h1> 
+    <el-header id="app-header" height="80px">
+      <a href="/"><img src="~/assets/img/dsp-logo.svg" alt="" height="40"></a>
     </el-header>
 </template>

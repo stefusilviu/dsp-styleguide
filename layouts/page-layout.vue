@@ -1,6 +1,6 @@
 <template>
   <div class="page-wrapper">
-    <app-header></app-header>
+    <app-header class="main-header"></app-header>
     <Nuxt />
   </div>
 </template>

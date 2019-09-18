@@ -3,7 +3,7 @@
     <app-sidebar></app-sidebar>
     <el-container>
       <el-main>
-        <div class="page-inner">
+        <div class="page-inner" :class="{'narrow-page': narrow}">
           <h2 class="page-title">
             <slot name="page-title"></slot>
           </h2>
@@ -13,13 +13,13 @@
           </div>
 
           <el-row :gutter="20">
-            <el-col :span="8">
-              <h3>Demo</h3>
+            <el-col :span="12">
+              <h4>Demo</h4>
               <div class="page-content-demo stg-design mb-30">
                 <slot name="page-demo"></slot>
               </div>
             </el-col>
-            <el-col :span="8">
+            <el-col :span="12">
               <div class="page-content-code mb-30">
                 <el-card>
                   <slot name="page-code"></slot>
@@ -41,6 +41,9 @@ export default {
   name: 'app-page',
   components: {
     'app-sidebar': AppSidebar
+  },
+  props: {
+    narrow: Boolean
   }
 }
 </script>

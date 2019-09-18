@@ -1,9 +1,7 @@
 @import "./core/variables";
 
 // Core
-@import "./core/fonts";
 @import "./core/base";
-// @import "./core/custom";
 
 // Components
 @import "./components/app-sidebar";
@@ -11,3 +9,7 @@
 
 // Modifiers/Utilities
 @import "./core/utilities";
+
+.stg-design {
+    @import "./stg-design/stg-design";
+}

@@ -1,23 +1,52 @@
-.button {
-    font-family: $sans;
-    font-weight: 600;
-    font-size: 14px;
-    text-transform: uppercase;
-    border: 1px solid #31409f;
-    border-radius: 2px;
-    padding: .6em 1em .3em;
-    background: $med-shasta;
-    color: #ffffff;
-}    
+button,
+a.button {
+  display: inline-block;
+  font: 600 14px $font-family-sans;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  padding: .6em 1em .3em;
+  margin: 0;
+  border: 1px solid transparent;
+  box-sizing: border-box;
+  border-radius: 2px;
+  align-self: flex-start;
+  background-color: inherit;
 
-.ghost {
-    border: 1px solid #4a4a4a;
+  &.disabled,
+  &:disabled,
+  &.inactive {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.9;
+  }
+
+  &.impact {
+    background-color: $stg-button-primary-bg;
+    color: $white;
+  }
+
+  &.promo {
+    background-color: $stg-accent-color;
+    color: $white;
+  }
+
+  &.ghost {
+    color: $stg-accent-color;
+    background-color: $white;
+    border-color: $dark-gray;
+  }
+
+  &.ghost.grey {
+    color: $dark-gray;
+  }
+
+  .loading-container {
     background: none;
-    color: $med-shasta;
-}
 
-.white {
-    border: 1px solid #ffffff;
-    background: #ffffff;
-    color: $med-shasta;
+    .loading-dot {
+      background-color: $white;
+    }
+  }
 }
