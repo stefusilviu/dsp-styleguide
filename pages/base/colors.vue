@@ -1,33 +1,36 @@
 <template>
-  <el-container id="app-container">
-    <app-sidebar></app-sidebar>
-    <el-container>
-      <el-main>
-        <div class="page-section">
-          <h2 class="main-title">Colors</h2>
-          <el-row :gutter="20">
-            <el-col :span="12">
-              <p>Base syles are used for setting up SCSS variables, typography and colors.</p>
-            </el-col>
-          </el-row>
-        </div>
+  <app-page :narrow="true">
 
-        <mcc-colors></mcc-colors>
-        
-      </el-main>
-    </el-container>
-  </el-container>
+    <template #page-title>Colors</template>
+
+    <template #page-description>
+      <!-- Content here -->
+      <p>Short description of element.</p>
+    </template>
+
+    <template #page-demo>
+      <!-- Content here -->
+    </template>
+
+    <template #page-code>
+      <!-- Content here -->
+    </template>
+
+  </app-page>
 </template>
 
 <script>
-  import AppSidebar from '@/components/AppSidebar'
-  import Colors from '@/content/base/colors/colors'
+  import AppPage from '@/components/AppPage'
 
   export default {
     layout: 'page-layout',
     components: {
-      'app-sidebar': AppSidebar,
-      'mcc-colors': Colors
+      'app-page': AppPage,
+    },
+    head () {
+      return {
+        title: 'Colors | Base',
+      }
     }
   }
 </script>

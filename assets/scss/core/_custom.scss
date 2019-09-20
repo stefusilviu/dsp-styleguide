@@ -10,6 +10,20 @@ pre[class*="language-"] {
     }
 }
 
+.el-menu-item:focus,
+.el-menu-item:hover,
+.el-submenu__title:hover,
+.el-menu-item.is-active {
+    background-color: #e3f5f6;
+}
+
+.el-submenu__title,
+.el-menu-item {
+    img {
+        margin-right: 8px;
+    }
+}
+
 .prism-editor-wrapper,
 .prism-editor__line-numbers {
     font-size: 13px !important;

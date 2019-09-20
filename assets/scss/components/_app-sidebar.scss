@@ -1,3 +1,7 @@
 .side-menu {
-    width: 240px;
+  width: 240px;
+
+  &.el-menu--collapse {
+    width: 70px;
   }
+}

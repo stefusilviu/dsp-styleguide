@@ -30,6 +30,11 @@
     components: {
       'app-page': AppPage,
       'mcc-buttons': ButtonsCode
+    },
+    head () {
+      return {
+        title: 'Button | Atoms',
+      }
     }
   }
 </script>

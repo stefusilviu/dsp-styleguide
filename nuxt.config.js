@@ -7,9 +7,10 @@ const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
 } : {}
 
 module.exports = {
-    /*
-    ** Global CSS
-    */
+    head: {
+        titleTemplate: '%s - DSP Styleguide',
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    },
     css: [
         'element-ui/lib/theme-chalk/reset.css',
         'element-ui/lib/theme-chalk/index.css',

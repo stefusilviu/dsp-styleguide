@@ -1,7 +1,7 @@
 <template>
   <app-page :narrow="true">
 
-    <template #page-title>More link</template>
+    <template #page-title>Paywall</template>
 
     <template #page-description>
       <!-- Content here -->
@@ -29,7 +29,7 @@
     },
     head () {
       return {
-        title: 'More link | Atoms',
+        title: 'Paywall | Templates',
       }
     }
   }

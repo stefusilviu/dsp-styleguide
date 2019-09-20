@@ -43,6 +43,11 @@
     layout: 'page-layout',
     components: {
       'app-sidebar': AppSidebar
+    },
+    head () {
+      return {
+        title: 'Home',
+      }
     }
   }
 </script>

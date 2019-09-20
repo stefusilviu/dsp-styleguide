@@ -1,11 +1,14 @@
 <template>
-  <el-menu class="side-menu" :collapse="false" :router="true" :unique-opened="true">
+  <el-menu class="side-menu" :collapse="sidebarCollapsed" :router="true" :unique-opened="true" :default-active="$nuxt.$route.path" active-text-color="#04816A">
 
-    <el-menu-item index="/"><i class="el-icon-house"></i>Home</el-menu-item>
+    <el-menu-item index="/">
+      <img src="~/assets/img/home-alt.svg" width="30" alt="">
+      <span>Home</span>
+    </el-menu-item>
 
     <el-submenu index="base-sub">
       <template slot="title">
-        <i class="el-icon-folder"></i>
+        <img src="~/assets/img/apps.svg" width="30" alt="">
         <span>Base</span>
       </template>
       <el-menu-item index="/base">Base</el-menu-item>
@@ -16,7 +19,7 @@
 
     <el-submenu index="atoms-sub">
       <template slot="title">
-        <i class="el-icon-folder"></i>
+        <img src="~/assets/img/atom.svg" width="30" alt="">
         <span>Atoms</span>
       </template>
       <el-menu-item index="/atoms">Atoms</el-menu-item>
@@ -27,32 +30,51 @@
       <el-menu-item index="/atoms/list">List</el-menu-item>
     </el-submenu>
 
-    <el-submenu index="3">
+    <el-submenu index="molecules-sub">
       <template slot="title">
-        <i class="el-icon-folder"></i>
+        <img src="~/assets/img/cell.svg" width="30" alt="">
         <span>Molecules</span>
       </template>
-      <el-menu-item index="3-1">Button</el-menu-item>
-      <el-menu-item index="3-2">Headings</el-menu-item>
-      <el-menu-item index="3-3">Cards</el-menu-item>
-      <el-menu-item index="3-4">list</el-menu-item>
+      <el-menu-item index="/molecules">Molecules</el-menu-item>
     </el-submenu>
 
-    <el-submenu index="4">
+    <el-submenu index="organisms-sub">
       <template slot="title">
-        <i class="el-icon-folder"></i>
-        <span>Modules</span>
+        <img src="~/assets/img/web-grid.svg" width="30" alt="">
+        <span>Organisms</span>
       </template>
-      <el-menu-item index="4-1">Button</el-menu-item>
-      <el-menu-item index="4-2">Headings</el-menu-item>
-      <el-menu-item index="4-3">Cards</el-menu-item>
-      <el-menu-item index="4-4">list</el-menu-item>
+      <el-menu-item index="/organisms">Organisms</el-menu-item>
+      <el-menu-item index="/organisms/masthead">Masthead</el-menu-item>
     </el-submenu>
+
+    <el-submenu index="templates-sub">
+      <template slot="title">
+        <img src="~/assets/img/window-maximize.svg" width="30" alt="">
+        <span>Templates</span>
+      </template>
+      <el-menu-item index="/templates">Templates</el-menu-item>
+      <el-menu-item index="/templates/paywall">Paywall</el-menu-item>
+    </el-submenu>
+
+    <menu-toggle></menu-toggle>
+
   </el-menu>
 </template>
 
 <script>
+import { mapState } from 'vuex'
+import MenuToggle from '@/components/MenuToggle.vue'
+
 export default {
-  name: 'app-sidebar'
+  name: 'app-sidebar',
+  components: {
+    'menu-toggle': MenuToggle
+  },
+  computed: mapState([
+    'sidebarCollapsed'
+  ]),
+  mounted() {
+    console.log(this.sidebarCollapsed)
+  }
 };
 </script>
