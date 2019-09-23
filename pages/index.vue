@@ -5,11 +5,11 @@
       <el-main>
         <div class="narrow-page">
           
-          <el-row type="flex" :gutter="20" align="middle">
-            <el-col :span="10">
+          <el-row :gutter="20" align="middle">
+            <el-col :sm="24" :md="10">
               <img class="responsive-img" src="~/assets/img/macbook-saratoga.png" alt="" width="500">
             </el-col>
-            <el-col :span="14">
+            <el-col :sm="24" :md="14">
               <h2>Saratoga design</h2>
               <p>The style guide is a living document and in order to meet the needs of the company must stay in front of the development schedule. To ensure development has a stable reference point for planning, we will cut minor releases on GitHub based on the intended project increment and patch releases for any necessary fixes or feature enhancements during that project increment.</p>
             </el-col>

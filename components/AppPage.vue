@@ -13,13 +13,13 @@
           </div>
 
           <el-row :gutter="20">
-            <el-col :span="12">
+            <el-col :sm="24" :md="12">
               <h4>Demo</h4>
               <div class="page-content-demo stg-design mb-30">
                 <slot name="page-demo"></slot>
               </div>
             </el-col>
-            <el-col :span="12">
+            <el-col :sm="24" :md="12">
               <div class="page-content-code mb-30">
                 <el-card>
                   <slot name="page-code"></slot>

@@ -1,5 +1,5 @@
 <template>
-  <el-menu class="side-menu" :collapse="sidebarCollapsed" :router="true" :unique-opened="true" :default-active="$nuxt.$route.path" active-text-color="#04816A">
+  <el-menu class="side-menu" :collapse="sidebarCollapsed || isMobile" :router="true" :unique-opened="true" :default-active="$nuxt.$route.path" active-text-color="#04816A">
 
     <el-menu-item index="/">
       <img src="~/assets/img/home-alt.svg" width="30" alt="">
@@ -65,16 +65,45 @@
 import { mapState } from 'vuex'
 import MenuToggle from '@/components/MenuToggle.vue'
 
+const debounce = (func, wait, immediate) => {
+  let timeout;
+  return function() {
+    let context = this, args = arguments,
+    later = function() {
+      timeout = null
+      if (!immediate) func.apply(context, args)
+    },
+    call_now = immediate && !timeout
+    clearTimeout(timeout)
+    timeout = setTimeout(later, wait)
+    if (call_now) func.apply(context, args)
+  }
+}
+
 export default {
   name: 'app-sidebar',
   components: {
     'menu-toggle': MenuToggle
   },
   computed: mapState([
-    'sidebarCollapsed'
+    'sidebarCollapsed',
+    'isMobile'
   ]),
-  mounted() {
-    console.log(this.sidebarCollapsed)
+  methods: {
+    onResize: function() {
+      console.log('a intrat')
+      this.$store.commit('changeIsMobile', window.innerWidth < 992)
+    }
+  },
+  // created() {
+  //   this.onResize()
+  // },
+  mounted: function () {
+    this.onResize()
+    window.addEventListener('resize', debounce(this.onResize, 250))
+  },
+  beforeDestroy: function () {
+    window.removeEventListener('resize', this.onResize)
   }
 };
 </script>

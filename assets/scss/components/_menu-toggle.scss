@@ -8,10 +8,15 @@
     border-top: 1px solid $light-gray;
     text-align: center;
     background: #fff;
+    display: none;
 
     i {
         font-size: 24px;
         color: $dark-green;
         margin-top: 13px;
+    }
+
+    @media (min-width: 992px) {
+        display: block;
     }
 }

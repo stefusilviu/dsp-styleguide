@@ -6,6 +6,7 @@
 
 .head-menu {
     float: right;
+    display: none;
 
     ul {
         margin: 0;
@@ -22,5 +23,9 @@
                 font-weight: 700;
             }
         }
+    }
+
+    @media (min-width: 760px) {
+        display: block;
     }
 }
