@@ -1,0 +1,33 @@
+.prop {
+    display: block;
+    padding: 10px 5px;
+    border-bottom: 1px solid $light-gray;
+
+    &:first-of-type {
+        border-top: 1px solid $light-gray;
+    }
+    
+    span {
+        line-height: 21px;
+    }
+
+    pre {
+        margin: 0;
+    }
+
+    .prop-name {
+        display: inline-block;
+        background: $light-gray;
+        border-radius: 3px;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .prop-type {
+        font-style: italic;
+        color: #aaa;
+        margin-right: 10px;
+    }
+}

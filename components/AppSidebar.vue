@@ -91,13 +91,9 @@ export default {
   ]),
   methods: {
     onResize: function() {
-      console.log('a intrat')
       this.$store.commit('changeIsMobile', window.innerWidth < 992)
     }
   },
-  // created() {
-  //   this.onResize()
-  // },
   mounted: function () {
     this.onResize()
     window.addEventListener('resize', debounce(this.onResize, 250))

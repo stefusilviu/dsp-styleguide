@@ -1,20 +1,10 @@
 <template>
   <app-page :narrow="true">
 
-    <template #page-title>Fonts</template>
-
-    <template #page-description>
-      <!-- Content here -->
-      <p>Short description of element.</p>
-    </template>
-
-    <template #page-demo>
-      <!-- Content here -->
-    </template>
-
-    <template #page-code>
-      <!-- Content here -->
-    </template>
+    <h2 class="page-title">Fonts</h2>
+    <div class="page-description mb-30">
+      <p>Short description of the component</p>
+    </div>
 
   </app-page>
 </template>

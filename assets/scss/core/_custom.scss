@@ -24,6 +24,10 @@ pre[class*="language-"] {
     }
 }
 
+.prism-editor-wrapper {
+    max-height: 300px;
+}
+
 .prism-editor-wrapper,
 .prism-editor__line-numbers {
     font-size: 13px !important;
