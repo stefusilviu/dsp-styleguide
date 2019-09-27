@@ -23,17 +23,17 @@ a.button {
   }
 
   &.impact {
-    background-color: $stg-button-primary-bg;
+    background-color: $dark-gray;
     color: $white;
   }
 
   &.promo {
-    background-color: $stg-accent-color;
+    background-color: $med-shasta;
     color: $white;
   }
 
   &.ghost {
-    color: $stg-accent-color;
+    color: $med-shasta;
     background-color: $white;
     border-color: $dark-gray;
   }
