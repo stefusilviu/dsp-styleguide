@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "nuxt",
     "generate": "nuxt generate",
-    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
-    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "build": "nuxt build",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "author": "",
