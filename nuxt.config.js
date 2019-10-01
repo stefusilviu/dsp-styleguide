@@ -1,5 +1,3 @@
-import path from 'path'
-
 module.exports = {
     head: {
         titleTemplate: '%s - DSP Styleguide',
@@ -12,24 +10,18 @@ module.exports = {
         'element-ui/lib/theme-chalk/index.css',
         './assets/scss/main.scss'
     ],
-
-    /*
-    ** Add element-ui in our app, see plugins/element-ui.js file
-    */
     plugins: [
         '@/plugins/element-ui',
         '@/plugins/global',
         { src: "@/plugins/prism", ssr: false }
     ],
-
     build: {
         extend(config, ctx) {
-            config.module.rules.push(
-                {
-                    test: /\.html$/,
-                    use: ['html-loader']
-                }
-            )
+            config.module.rules.push({
+                test: /\.html$/,
+                use: ['html-loader']
+            })
         }
-    }
+    },
+    dir: 'build'
 }

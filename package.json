@@ -2,14 +2,14 @@
   "name": "dsp-styleguide",
   "version": "1.0.0",
   "description": "Styleguide for DSP applications",
-  "main": "index.js",
   "scripts": {
     "dev": "nuxt",
     "generate": "nuxt generate",
-    "build": "nuxt build",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "generate-stylesheet": "gulp style",
+    "generate-all": "npm run generate-stylesheet && npm run generate",
+    "build": "nuxt build"
   },
-  "author": "",
+  "author": "Silviu Stefu",
   "license": "ISC",
   "dependencies": {
     "css-loader": "^3.2.0",
@@ -22,9 +22,15 @@
     "vue-prism-editor": "^0.3.0"
   },
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-debug": "^4.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
     "html-loader": "^0.5.5",
     "node-sass": "^4.12.0",
-    "push-dir": "^0.4.1",
     "sass-loader": "^8.0.0"
   }
 }

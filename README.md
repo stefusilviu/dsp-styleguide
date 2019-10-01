@@ -15,6 +15,12 @@ $ npm start
 
 # generate static project
 $ npm run generate
+
+# generate CSS Stylesheet package
+$ npm run generate-stylesheet
+
+# generate static website and stylesheet
+$ npm run generate-all
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
