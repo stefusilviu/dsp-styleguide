@@ -23,5 +23,7 @@ module.exports = {
             })
         }
     },
-    dir: 'build'
+    generate: {
+        dir: 'build'
+    }
 }
