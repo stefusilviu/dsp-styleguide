@@ -1,9 +1,0 @@
-{
-  "name": "dsp-styleguide",
-  "version": "1.0.0",
-  "description": "Styleguide for DSP applications",
-  "author": "Silviu Stefu",
-  "files": [
-    "dist/stg-design.css"
-  ]
-}
