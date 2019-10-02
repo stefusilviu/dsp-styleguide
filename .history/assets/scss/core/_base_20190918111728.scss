@@ -1,0 +1,46 @@
+html,
+body {
+    position: relative;
+	min-height: 100vh;
+	font-size: 16px;
+	line-height: 1.625;
+	margin: 0;
+	font-family: $body-font;
+}
+
+.page-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+.page-inner {
+	position: relative;
+	width: 100%;
+}
+
+#app-container {
+	height: calc(100% - 80px);
+	position: absolute;
+	top: 80px;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+.page-section {
+	margin-bottom: 40px;
+}
+
+.demo-container {
+	margin-bottom: 20px;
+}
+
+.narrow-page {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}

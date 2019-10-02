@@ -1,0 +1,15 @@
+@import "./core/variables";
+
+// Core
+@import "./core/base";
+
+// Components
+@import "./components/app-sidebar";
+@import "./components/app-header";
+
+// Modifiers/Utilities
+@import "./core/utilities";
+
+.stg-design {
+    @import "./stg-design/stg-design";
+}

@@ -1,0 +1,39 @@
+// Colors
+$light-gray: #EBEBEB;
+$medium-gray: #9E9E9E;
+$dark-gray: #4A4A4A;
+$section-gray: #F4F4F4;
+$error-color: #D0021B;
+$success-green: #00C853;
+$market-color: #cccccc; // General market color overwritten using _atomic-markets.scss
+$accent-color: #cccccc; // Primary market color overwritten using _atomic-markets.scss
+
+/*  Saratoga design  */
+// Typography
+$font-family-serif: "McClatchy Serif", Georgia, Times, "Times New Roman", serif;
+$font-family-sans: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+
+$fz-body: 14px;
+$fz-heading-page: 19px;
+$fz-more-link: 14px;
+
+// Colors
+$black: #000;
+$white: #fff;
+$stg-dark-gray: #222222;
+$stg-medium-gray: #707070;
+$stg-light-gray: #f4f4f4;
+$stg-border-color: #D8D8D8;
+$stg-dark-border-color: #989898;
+$stg-light-border-color: #E7E7E7;
+$stg-impact-color: #373737;
+
+// Buttons
+$stg-button-primary-bg: #373737;
+$stg-button-primary-bg-hover: #505050;
+$stg-button-border-color: #4a4a4a;
+$stg-accent-color: #31409F;
+
+// Shadows
+$small-shadow: 0 1px 2px 0 rgba($black,0.2), 0 1px 5px 0 rgba($black,0.13);
+$big-shadow: 0 8px 17px 0 rgba($black,0.2), 0 6px 20px 0 rgba($black,0.19);

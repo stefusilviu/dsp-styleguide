@@ -1,0 +1,29 @@
+{
+  "name": "dsp-styleguide",
+  "version": "1.0.0",
+  "description": "Styleguide for DSP applications",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "generate": "nuxt generate",
+    "build:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "DEPLOY_ENV=GH_PAGES nuxt generate",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^3.2.0",
+    "element-ui": "^2.12.0",
+    "html-loader": "^0.5.5",
+    "nuxt": "^2.9.2",
+    "path": "^0.12.7",
+    "prismjs": "^1.17.1",
+    "vue-prism-editor": "^0.3.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/markdownit-loader": "^1.1.1",
+    "node-sass": "^4.12.0",
+    "push-dir": "^0.4.1"
+  }
+}

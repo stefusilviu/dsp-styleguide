@@ -1,0 +1,101 @@
+$fontsPath: '../../static/fonts';
+
+@font-face{
+    font-family:"Roboto";
+    src: local('Roboto'),
+         local('Roboto-Regular'),
+         url("#{$fontsPath}/roboto/Roboto-Regular.woff2") format("woff2"),
+         url("#{$fontsPath}/roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family:"Roboto";
+    src: local('Roboto Bold'),
+         local('Roboto-Bold'),
+         url("#{$fontsPath}/roboto/Roboto-Bold.woff2") format("woff2"),
+         url("#{$fontsPath}/roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+/*********** McClatchy Sans ***********/
+@font-face {
+    font-family: "McClatchy Sans";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-sans-black.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-sans-black.woff2') format("woff2");
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Sans";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-sans-bold.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-sans-bold.woff2') format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Sans";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-sans-semi.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-sans-semi.woff2') format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Sans";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-sans-medium.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-sans-medium.woff2') format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Sans";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-sans-regular.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-sans-regular.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Sans";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-sans-light.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-sans-light.woff2') format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Sans";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-sans-thin.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-sans-thin.woff2') format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+/************ McClatchy Serif **************/
+@font-face {
+    font-family: "McClatchy Serif";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-serif-bold.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-serif-bold.woff2') format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Serif";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-serif-semi.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-serif-semi.woff2') format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Serif";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-serif-medium.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-serif-medium.woff2') format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "McClatchy Serif";
+    src: url('#{$fontsPath}/mcclatchy/mcclatchy-serif-regular.woff') format("woff"),
+         url('#{$fontsPath}/mcclatchy/mcclatchy-serif-regular.woff2') format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}

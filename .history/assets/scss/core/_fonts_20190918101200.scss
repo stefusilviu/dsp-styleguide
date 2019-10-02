@@ -1,0 +1,20 @@
+$fontsPath: '../../static/fonts';
+
+@font-face{
+    font-family:"Roboto";
+    src: local('Roboto'),
+         local('Roboto-Regular'),
+         url("#{$fontsPath}/roboto/Roboto-Regular.woff2") format("woff2"),
+         url("#{$fontsPath}/roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face{
+    font-family:"Roboto";
+    src: local('Roboto Bold'),
+         local('Roboto-Bold'),
+         url("#{$fontsPath}/roboto/Roboto-Bold.woff2") format("woff2"),
+         url("#{$fontsPath}/roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}

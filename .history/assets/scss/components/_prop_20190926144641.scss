@@ -1,0 +1,18 @@
+.prop {
+    display: block;
+    padding: 5px;
+    border-bottom: 1px solid $light-gray;
+    
+    span {
+        line-height: 21px;
+    }
+
+    .prop-name {
+        display: inline-block;
+        background: $light-gray;
+        border-radius: 3px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,18 @@
+@import "./core/variables";
+
+// Core
+@import "./core/base";
+@import "./stg-design/base/fonts";
+
+// Components
+@import "./components/app-sidebar";
+@import "./components/app-header";
+@import "./components/menu-toggle";
+@import "./components/shortcut";
+
+// Modifiers/Utilities
+@import "./core/utilities";
+
+.stg-design {
+    @import "./stg-design/stg-design";
+}
