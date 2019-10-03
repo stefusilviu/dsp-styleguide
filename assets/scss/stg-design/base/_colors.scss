@@ -1,24 +1,49 @@
 .black {
-    background: $black;
+    color: $black;
 }
 .dark-gray {
-    background: $dark-gray;
+    color: $dark-gray;
 }
 .med-gray {
-    background: $med-gray;
+    color: $med-gray;
 }
 .light-gray {
-    background: $light-gray;
+    color: $light-gray;
 }
 .dark-shasta {
-    background: $dark-shasta;
+    color: $dark-shasta;
 }
 .med-shasta {
-    background: $med-shasta;
+    color: $med-shasta;
 }
 .light-shasta {
-    background: $light-shasta;
+    color: $light-shasta;
 }
 .red {
+    color: $red;
+}
+
+.bg-black {
+    background: $black;
+}
+.bg-dark-gray {
+    background: $dark-gray;
+}
+.bg-med-gray {
+    background: $med-gray;
+}
+.bg-light-gray {
+    background: $light-gray;
+}
+.bg-dark-shasta {
+    background: $dark-shasta;
+}
+.bg-med-shasta {
+    background: $med-shasta;
+}
+.bg-light-shasta {
+    background: $light-shasta;
+}
+.bg-red {
     background: $red;
 }

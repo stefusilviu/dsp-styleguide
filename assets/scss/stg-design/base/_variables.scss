@@ -10,12 +10,12 @@ $light-shasta: #5169B8;
 $red: #D63031;
 
 // Typography
-$font-family-serif: "McClatchy Serif", Georgia, Times, "Times New Roman", serif;
-$font-family-sans: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+$ff-serif: "McClatchy Serif", Georgia, Times, "Times New Roman", serif;
+$ff-sans: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
 
 $fz-body: 14px;
 $fz-heading-page: 19px;
-$fz-more-link: 14px;
+$fz-more-link: $fz-body;
 
 // Shadows
 $small-shadow: 0 1px 2px 0 rgba($black,0.2), 0 1px 5px 0 rgba($black,0.13);

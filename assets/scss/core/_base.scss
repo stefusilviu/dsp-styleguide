@@ -9,6 +9,10 @@ body {
 	font-family: $ff-body;
 }
 
+p {
+	line-height: 1.625;
+}
+
 a {
 	color: $primary-color;
 	transition: color .2s ease-in-out;
@@ -116,4 +120,15 @@ h6 {
 	h4 {
 		font-size: 16px;
 	}
+}
+
+pre {
+	color: $dark-green;
+	font-family: monospace;
+	background: $light-gray;
+	display: inline-block;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 3px;
+	margin: 0;
 }

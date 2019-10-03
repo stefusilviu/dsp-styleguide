@@ -17,7 +17,7 @@
                 <shortcut link="/atoms/card">Typography</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
-                <shortcut link="/atoms/morelink">More link</shortcut>
+                <shortcut link="/atoms/more-link">More link</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
                 <shortcut link="/atoms/list">List</shortcut>

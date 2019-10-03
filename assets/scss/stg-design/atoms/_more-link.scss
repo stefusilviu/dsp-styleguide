@@ -1,0 +1,40 @@
+.more-link {
+  color: $light-gray;
+  font-family: $ff-sans;
+  font-size: $fz-more-link;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:after {
+    content: "\f178";
+    display: inline-block;
+    font-family: 'FontAwesome';
+    font-size: 16px;
+    margin-left: 5px;
+    transition: transform .6s ease;
+  }
+
+  &:hover {
+    &:after {
+      transform: translateX(4px);
+    }
+  }
+
+  &.blue {
+    color: $med-shasta;
+  }
+
+  &.color-arrow {
+    &:after {
+      color: $med-shasta;
+    }
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.ttn {
+    text-transform: none;
+  }
+}

@@ -26,7 +26,7 @@
       <el-menu-item index="/atoms/button">Button</el-menu-item>
       <el-menu-item index="/atoms/typography">Typography</el-menu-item>
       <el-menu-item index="/atoms/card">Card</el-menu-item>
-      <el-menu-item index="/atoms/morelink">More link</el-menu-item>
+      <el-menu-item index="/atoms/more-link">More link</el-menu-item>
       <el-menu-item index="/atoms/list">List</el-menu-item>
     </el-submenu>
 
