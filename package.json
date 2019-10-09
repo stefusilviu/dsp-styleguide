@@ -12,6 +12,8 @@
   "author": "Silviu Stefu",
   "license": "ISC",
   "dependencies": {
+    "@nuxtjs/font-awesome": "^1.0.4",
+    "bootstrap": "^4.3.1",
     "css-loader": "^3.2.0",
     "element-ui": "^2.12.0",
     "nuxt": "^2.9.2",
@@ -22,6 +24,7 @@
     "vue-prism-editor": "^0.3.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "autoprefixer": "^9.6.1",
     "cssnano": "^4.1.10",
     "gulp": "^4.0.2",

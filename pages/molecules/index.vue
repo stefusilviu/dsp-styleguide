@@ -10,6 +10,15 @@
               properties and behave quite differently, even though they’re made up of the same atomic elements (hydrogen and oxygen).</p>
             <p>In interfaces, molecules are relatively simple groups of UI elements functioning together as a unit. 
               For example, a form label, search input, and button can join together to create a search form molecule.</p>
+            <el-row :gutter="20">
+              <el-col :xs="12" :sm="8" :lg="6">
+                <shortcut link="/molecules/utilities">Utilities</shortcut>
+              </el-col>
+              <el-col :xs="12" :sm="8" :lg="6">
+              </el-col>
+              <el-col :xs="12" :sm="8" :lg="6">
+              </el-col>
+            </el-row>
         </div>
       </el-main>
     </el-container>

@@ -36,6 +36,7 @@
         <span>Molecules</span>
       </template>
       <el-menu-item index="/molecules">Molecules</el-menu-item>
+      <el-menu-item index="/molecules/utilities">Utilities</el-menu-item>
     </el-submenu>
 
     <el-submenu index="organisms-sub">

@@ -1,0 +1,41 @@
+.primary-headline {
+    font-family: $ff-serif;
+    font-size: 30px;
+    line-height: 36px;
+
+    &.niche {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    &.enhanced {
+        font-size: 40px;
+        line-height: 52px;
+
+        @media (min-width: 576px) {
+            font-size: 52px;
+            line-height: 78px;
+        }
+    }
+}
+
+.secondary-headline {
+    font-family: $ff-serif;
+    font-size: 18px;
+    line-height: 21px;
+
+    &.niche {
+        font-size: 19px;
+        line-height: 28px;
+    }
+
+    &.enhanced {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+.niche {
+    font-family: $ff-sans;
+    font-weight: 600;
+}

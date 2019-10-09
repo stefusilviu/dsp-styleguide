@@ -52,17 +52,17 @@
 </template>
 
 <script>
-import AppPage from "@/components/AppPage";
+import AppPage from '@/components/AppPage'
 
-import html from "@/content/atoms/buttons/html-markup.html";
-import component from "@/content/atoms/buttons/component.html";
-import css from "!!raw-loader!@/assets/scss/stg-design/atoms/_buttons.scss";
+import html from '@/content/atoms/buttons/html-markup.html'
+import component from '@/content/atoms/buttons/component.html'
+import css from '!!raw-loader!@/assets/scss/stg-design/atoms/_buttons.scss'
 
 export default {
-  layout: "page-layout",
+  layout: 'page-layout',
   head() {
     return {
-      title: "Button | Atoms"
+      title: 'Button | Atoms'
     };
   },
   data() {
@@ -70,7 +70,7 @@ export default {
       html,
       css,
       component
-    };
+    }
   }
 };
 </script>

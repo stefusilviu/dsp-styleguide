@@ -1,0 +1,26 @@
+body {
+    font-size: $fz-body;
+    font-family: $ff-sans;
+    line-height: 1.5;
+}
+
+p {
+    font-size: $fz-body;
+    font-family: $ff-sans;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+a {
+    font-weight: 600;
+    color: $med-shasta;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+strong {
+    font-weight: 600;
+}

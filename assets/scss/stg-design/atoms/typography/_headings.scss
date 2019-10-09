@@ -1,0 +1,35 @@
+h1, h2, h3, h4, h5, h6 {
+  color: $black;
+  font-family: $ff-serif;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+h3 {
+    font-family: $ff-sans;
+    font-size: 24px;
+}
+
+h4 {
+    font-family: $ff-sans;
+    font-size: 19px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-family: $ff-sans;
+    font-size: 12px;
+    font-weight: 400;
+}

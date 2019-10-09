@@ -1,0 +1,43 @@
+summary, .summary {
+  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.small {
+  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.sans {
+  font-family: $ff-sans;
+}
+
+.serif {
+  font-family: $ff-serif;
+}
+
+.soft {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.no-shadow {
+  box-shadow: none;
+}
+
+.relative {
+  position: relative;
+}
+
+.hidden, [hidden] {
+  display: none;
+}
