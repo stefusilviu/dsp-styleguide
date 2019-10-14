@@ -1,6 +1,14 @@
 // Vendor
 @import "bootstrap/scss/bootstrap-reboot.scss";
 @import "bootstrap/scss/bootstrap-grid.scss";
+@import "bootstrap/scss/_forms.scss";
+@import "bootstrap/scss/_dropdown.scss";
+@import "bootstrap/scss/_input-group.scss";
+@import "bootstrap/scss/_custom-forms.scss";
+@import "bootstrap/scss/utilities/_align.scss";
+@import "bootstrap/scss/utilities/_clearfix.scss";
+@import "bootstrap/scss/utilities/_float.scss";
+@import "bootstrap/scss/utilities/_text.scss";
 
 // Variables
 @import "./base/variables";
@@ -13,6 +21,8 @@
 @import "./atoms/more-link";
 @import "./atoms/cards";
 @import "./atoms/typography";
+@import "./atoms/forms";
+@import "./atoms/select-box";
 
 // Molecules
 @import "./molecules/utilities";

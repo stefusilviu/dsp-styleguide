@@ -1,0 +1,47 @@
+.form-control {
+    height: 40px;
+    width: 100%;
+    border: 1px solid $light-gray;
+    background: $white;
+    border-radius: $bd-radius-sm;
+    box-shadow: none;
+    font-size: 1em;
+
+    &:focus,
+    &.focus {
+        border: 1px solid $light-gray;
+        box-shadow: $med-shadow;
+    }
+
+    &.is-invalid {
+        background: none;
+        padding: 0.375rem 0.75rem;
+        border-color: $red;
+        
+        &:focus,
+        &.focus {
+            box-shadow: $red-shadow;
+        }
+    }
+}
+
+.form-group {
+    label {
+        font-family: $ff-sans;
+        font-size: $fz-body;
+        line-height: 1.5;
+        font-weight: 600;
+        color: $black;
+        margin-bottom: 10px;
+    }
+}
+
+.form-text {
+    font-size: 0.785em;
+    color: $med-gray;
+}
+
+.invalid-feedback {
+    @extend .form-text;
+    color: $red;
+}

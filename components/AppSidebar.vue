@@ -28,6 +28,7 @@
       <el-menu-item index="/atoms/card">Card</el-menu-item>
       <el-menu-item index="/atoms/more-link">More link</el-menu-item>
       <el-menu-item index="/atoms/list">List</el-menu-item>
+      <el-menu-item index="/atoms/forms">Forms</el-menu-item>
     </el-submenu>
 
     <el-submenu index="molecules-sub">

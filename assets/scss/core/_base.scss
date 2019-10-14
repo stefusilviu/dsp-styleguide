@@ -9,6 +9,12 @@ body {
 	font-family: $ff-body;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 p {
 	line-height: 1.625;
 }
