@@ -1,7 +1,7 @@
 module.exports = {
     head: {
         titleTemplate: '%s - DSP Styleguide',
-        link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+        link: [{ rel: 'icon', type: 'image/x-icon', href: '~/assets/img/favicon.ico' }],
         link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700&display=swap' }],
         meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
         script: [{ src: '/js/select-box.js', body: true}],

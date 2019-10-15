@@ -1,54 +1,52 @@
 /* The container must be positioned relative: */
 .stg-select {
-    position: relative;
-}
+  position: relative;
+  font-family: $ff-sans;
 
-.stg-select select {
+  select {
     display: none; /*hide original SELECT element: */
+  }
 }
 
 .select-selected {
-    height: 40px;
-    width: 100%;
-    border: 1px solid $light-gray;
-    background: $white;
-    border-radius: 2px;
-    box-shadow: none;
-    padding: 0.5em 0.75em;
-    font-size: 1em;
-    line-height: 1.5;
-    cursor: pointer;
-}
-
-/* Style the arrow inside the select element: */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/* Point the arrow upwards when the select box is open (active): */
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div {
-  color: $med-gray;
-  padding: 8px 16px;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  border: 1px solid $light-gray;
+  background: $white;
+  border-radius: 2px;
+  box-shadow: none;
+  padding: 0.5em 0.75em;
+  font-family: $ff-sans;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.8;
   cursor: pointer;
+  color: $black;
+
+  &:after {
+    content:'';
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 6px solid transparent;
+    border-color: $black transparent transparent transparent;
+  }
+
+  &.select-arrow-active {
+    &:after {
+      border-color: transparent transparent $black transparent;
+      margin-top: -10px;
+    }
+  }
 }
 
-/* Style items (options): */
 .select-items {
   position: absolute;
-  top: 0;
+  top: calc(100% - 40px);
   left: 0;
   right: 0;
   z-index: 99;
@@ -56,23 +54,31 @@
   border: 1px solid $light-gray;
   border-radius: $bd-radius-sm;
   box-shadow: $med-shadow;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   &.top {
       top: auto;
       bottom: 0;
+  }
+
+  div {
+    color: $med-gray;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    &:hover {
+      background: rgba(0,0,0,.05);
+    }
+  }
+
+  .same-as-selected {
+    background: rgba(0,0,0,.05);
+    font-weight: 600;
   }
 }
 
 /* Hide the items when the select box is closed: */
 .select-hide {
   display: none;
-}
-
-.select-items div:hover {
-  background: rgba(0,0,0,.1);
-}
-
-.same-as-selected {
-  color: $med-shasta;
-  font-weight: 600;
 }
