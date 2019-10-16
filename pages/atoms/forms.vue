@@ -24,19 +24,37 @@
             <small class="form-text">This is a hint</small>
           </div>
           <div class="form-group">
-            <label for="error-input">Error</label>
-            <input type="email" class="form-control is-invalid" id="error-input">
+            <label for="error-input-sample">Error</label>
+            <input type="email" class="form-control is-invalid" id="error-input-sample" name="error-input-sample">
             <small class="invalid-feedback">This is an error state message</small>
           </div>
           <div class="form-group stg-select">
             <label for="input-select">Dropdown</label>
             <select class="form-control" id="input-select">
+              <option></option>
               <option>Option 1</option>
               <option>Option 2</option>
               <option>Option 3</option>
               <option>Option 4</option>
               <option>Option 5</option>
             </select>
+          </div>
+          <div class="form-group">
+            <label for="password-input-sample">Password</label>
+            <input type="password" class="form-control" id="password-input-sample" name="password-input-sample">
+            <div class="password-switch"></div>
+            <small class="form-text">Must be at least 7 characters long</small>
+          </div>
+          <div class="form-group">
+            <label for="password-input-visible-sample">Password</label>
+            <input type="text" class="form-control" id="password-input-visible-sample" name="password-input-visible-sample" value="v3ry5tr0n9!">
+            <div class="password-switch visible"></div>
+            <small class="form-text">Must be at least 7 characters long</small>
+          </div>
+          <div class="form-group">
+            <label for="cardNumber">Credit card</label>
+            <input type="text" class="form-control cc-input" id="cardNumber">
+            <div class="cc-type"></div>
           </div>
         </div>
       </el-col>

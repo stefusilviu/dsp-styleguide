@@ -10,7 +10,7 @@
 
 .select-selected {
   position: relative;
-  height: 40px;
+  height: $input-height;
   width: 100%;
   border: 1px solid $light-gray;
   background: $white;

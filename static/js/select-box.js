@@ -38,7 +38,9 @@ function initStgSelect() {
         }
         h.click();
       });
-      optionsList.appendChild(optionItem);
+      if (optionItem.innerHTML) {
+        optionsList.appendChild(optionItem);
+      }
     }
     selectInputs[i].appendChild(optionsList);
     selectSelected.addEventListener("click", function (e) {

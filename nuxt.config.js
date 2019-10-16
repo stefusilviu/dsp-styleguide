@@ -4,7 +4,12 @@ module.exports = {
         link: [{ rel: 'icon', type: 'image/x-icon', href: '~/assets/img/favicon.ico' }],
         link: [{ rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Lato:400,700&display=swap' }],
         meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
-        script: [{ src: '/js/select-box.js', body: true}],
+        script: [
+            { src: '/js/vendor/cleave.min.js', body: true },
+            { src: '/js/select-box.js', body: true},
+            { src: '/js/password-switch.js', body: true },
+            { src: '/js/plugins.js', body: true }
+        ],
     },
     css: [
         'element-ui/lib/theme-chalk/reset.css',

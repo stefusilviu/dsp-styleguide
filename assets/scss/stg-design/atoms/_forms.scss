@@ -1,5 +1,5 @@
 .form-control {
-    height: 40px;
+    height: $input-height;
     width: 100%;
     border: 1px solid $light-gray;
     background: $white;
@@ -27,6 +27,8 @@
 }
 
 .form-group {
+    position: relative;
+
     label {
         font-family: $ff-sans;
         font-size: $fz-body;
@@ -45,4 +47,56 @@
 .invalid-feedback {
     @extend .form-text;
     color: $red;
+}
+
+.password-switch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+
+    &:after {
+        content:'\f070';
+        font-family: 'FontAwesome';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 20px;
+        width: 20px;
+        line-height: 20px;
+        text-align: right;
+        color: $black;
+    }
+
+    &.visible {
+        &:after {
+            content: '\f06e';
+        }
+    } 
+}
+
+.cc-input {
+    padding-right: 60px;
+    letter-spacing: 1px;
+}
+
+.cc-type {
+    position: absolute;
+    height: $input-height - 10px;
+    bottom: 5px;
+    right: 0;
+    width: 60px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    &.visa {
+        background-image: url(/img/cc-visa.png);
+    }
+
+    &.mastercard {
+        background-image: url(/img/cc-mastercard.png);
+    }
 }
