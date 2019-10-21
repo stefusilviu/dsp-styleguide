@@ -51,6 +51,6 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## Dependencies
 
-*Cleave.js - input formatter (included in build)
-*Bootstrap - css library (included in build)
-*FontAwesome - icons library (not included in build)
+* Cleave.js - input formatter (included in build)
+* Bootstrap - css library (included in build)
+* FontAwesome - icons library (not included in build)
