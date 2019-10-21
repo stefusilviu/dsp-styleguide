@@ -14,16 +14,19 @@
                 <shortcut link="/atoms/button">Button</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
-                <shortcut link="/atoms/card">Typography</shortcut>
+                <shortcut link="/atoms/card">Card</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
-                <shortcut link="/atoms/more-link">More link</shortcut>
+                <shortcut link="/atoms/forms">Forms</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
                 <shortcut link="/atoms/list">List</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
-                <shortcut link="/atoms/forms">Forms</shortcut>
+                <shortcut link="/atoms/more-link">More link</shortcut>
+              </el-col>
+              <el-col :xs="12" :sm="8" :lg="6">
+                <shortcut link="/atoms/card">Typography</shortcut>
               </el-col>
             </el-row>
         </div>

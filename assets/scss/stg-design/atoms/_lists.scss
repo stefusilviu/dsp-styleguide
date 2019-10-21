@@ -1,0 +1,21 @@
+.list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+    padding-left: 38px;
+    position: relative;
+    margin-bottom: 5px;
+
+    &:before {
+      content:'•';
+      position: absolute;
+      left: 14px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

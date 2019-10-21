@@ -11,7 +11,7 @@
                 <shortcut link="/base/colors">Colors</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
-                <shortcut link="/base/fonts">Fonts</shortcut>
+                <shortcut link="/base/typefaces">Typefaces</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
                 <shortcut link="/base/variables">Variables</shortcut>

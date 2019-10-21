@@ -13,6 +13,9 @@
             <button class="button impact">Impact button</button>
           </div>
           <div class="mb-10">
+            <button class="button impact disabled">Impact button disabled</button>
+          </div>
+          <div class="mb-10">
             <button class="button ghost">Ghost button</button>
           </div>
           <div class="mb-10">
@@ -20,6 +23,21 @@
           </div>
           <div class="mb-10">
             <button class="button">Text button</button>
+          </div>
+          <div class="mb-10">
+            <button class="button promo full-width">Full width button</button>
+          </div>
+          <div class="mb-10">
+            <button class="button promo full-width-mobile">Full width on mobile</button>
+          </div>
+          <div class="mb-10">
+            <button class="button social facebook"><span>Sign in with facebook</span></button>
+          </div>
+          <div class="mb-10">
+            <button class="button social google"><span>Sign in with google</span></button>
+          </div>
+          <div class="mb-10">
+            <button class="button social apple"><span>Sign in with apple</span></button>
           </div>
         </div>
       </el-col>

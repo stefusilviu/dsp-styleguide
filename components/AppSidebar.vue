@@ -13,7 +13,7 @@
       </template>
       <el-menu-item index="/base">Base</el-menu-item>
       <el-menu-item index="/base/colors">Colors</el-menu-item>
-      <el-menu-item index="/base/fonts">Fonts</el-menu-item>
+      <el-menu-item index="/base/typefaces">Typefaces</el-menu-item>
       <el-menu-item index="/base/variables">Variables</el-menu-item>
     </el-submenu>
 

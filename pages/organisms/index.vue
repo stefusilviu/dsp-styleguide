@@ -12,6 +12,11 @@
             <p>Organisms can consist of similar or different molecule types. A header organism might consist of dissimilar 
               elements such as a logo image, primary navigation list, and search form. We see these types of organisms on 
               almost every website we visit.</p>
+            <el-row :gutter="20">
+              <el-col :xs="12" :sm="8" :lg="6">
+                <shortcut link="/organisms/masthead">Masthead</shortcut>
+              </el-col>
+            </el-row>
         </div>
       </el-main>
     </el-container>

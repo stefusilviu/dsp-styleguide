@@ -15,6 +15,7 @@ module.exports = {
         'element-ui/lib/theme-chalk/reset.css',
         'element-ui/lib/theme-chalk/index.css',
         '@fortawesome/fontawesome-free/css/solid.css',
+        '@fortawesome/fontawesome-free/css/brands.css',
         './assets/scss/main.scss'
     ],
     plugins: [

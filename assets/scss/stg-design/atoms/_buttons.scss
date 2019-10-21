@@ -19,7 +19,7 @@ a.button {
   &.inactive {
     cursor: default;
     pointer-events: none;
-    opacity: 0.9;
+    opacity: 0.8;
   }
 
   &.impact {
@@ -47,6 +47,60 @@ a.button {
 
     .loading-dot {
       background-color: $white;
+    }
+  }
+
+
+  &.full-width {
+    width: 100%;
+  }
+
+  &.full-width-mobile {
+    @include media-breakpoint-down(xs) {
+      width: 100%;
+    }
+  }
+
+  &.social {
+    color: $black;
+    background-color: $white;
+    border-color: $dark-gray;
+
+    span {
+      display: inline-block;
+      line-height: 18px;
+    }
+
+    &.facebook,
+    &.google,
+    &.apple {
+      &:before {
+        content:'';
+        font-family: $font-awesome-brands;
+        display: inline-block;
+        margin-right: 10px;
+      }
+    }
+
+    &.facebook {
+      &:before {
+        content:'\f39e';
+        color: #3b5998;
+      }
+    }
+
+    &.google {
+      &:before {
+        content:'\f1a0';
+        color: #b82000;
+      }
+    }
+
+    &.apple {
+      &:before {
+        content:'\f179';
+        color: #000;
+      }
     }
   }
 }

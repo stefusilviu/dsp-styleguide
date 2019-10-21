@@ -14,7 +14,7 @@
 @import "./base/variables";
 
 // Base
-@import "./base/fonts";
+@import "./base/typefaces";
 
 // Atoms
 @import "./atoms/buttons";
@@ -26,6 +26,9 @@
 
 // Molecules
 @import "./molecules/utilities";
+
+// organisms
+@import "./organisms/masthead";
 
 // Modifiers
 @import "./base/colors";

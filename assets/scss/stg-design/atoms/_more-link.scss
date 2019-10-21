@@ -8,7 +8,7 @@
   &:after {
     content: "\f178";
     display: inline-block;
-    font-family: 'FontAwesome';
+    font-family: $font-awesome;
     font-size: 16px;
     margin-left: 5px;
     transition: transform .6s ease;
