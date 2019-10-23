@@ -23,6 +23,7 @@
         <span>Atoms</span>
       </template>
       <el-menu-item index="/atoms">Atoms</el-menu-item>
+      <el-menu-item index="/atoms/animations">Animations</el-menu-item>
       <el-menu-item index="/atoms/button">Button</el-menu-item>
       <el-menu-item index="/atoms/typography">Typography</el-menu-item>
       <el-menu-item index="/atoms/card">Card</el-menu-item>

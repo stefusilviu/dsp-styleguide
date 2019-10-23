@@ -1,0 +1,15 @@
+.animation-box {
+    height: 100px;
+    width: 100px;
+    background: gray;
+    animation-duration: 1.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
