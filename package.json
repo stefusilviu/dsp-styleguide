@@ -6,7 +6,7 @@
     "dev": "nuxt",
     "generate": "nuxt generate",
     "build-package": "gulp build",
-    "generate-all": "npm run generate-stylesheet && npm run generate",
+    "generate-all": "npm run build-package && npm run generate",
     "build": "nuxt build"
   },
   "author": "Silviu Stefu",
