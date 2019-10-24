@@ -100,3 +100,76 @@
         background-image: url(/img/cc-mastercard.png);
     }
 }
+
+// Custom Bootstrap checkboxes and radios
+.custom-control {
+    input[type="checkbox"],
+    input[type="radio"] {
+        &:focus {
+            & + .custom-control-label {
+                &:before {
+                    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+                    border-color: $black;
+                }
+            }
+        }
+    }
+}
+
+.custom-control-label {
+    padding-top: 3px; // Fix the font line
+
+    &:before {
+        border: 1px solid $black;
+    }
+
+    &:after {
+        background-size: 10px 10px;
+    }
+}
+
+.custom-checkbox {
+    .custom-control-label {
+        &:before {
+            border-radius: 0;
+        }
+    }
+}
+
+.custom-radio {
+    .custom-control-label {
+        padding-top: 2px;
+        
+        &:before,
+        &:after {
+            height: 14px;
+            width: 14px;
+        }
+
+        &:after {
+            background-size: 6px 6px;
+        }
+    }
+}
+
+.custom-control-input {
+    &:checked {
+        & ~ .custom-control-label {
+            &:before {
+                background: $black;
+                border-color: $black;
+            }
+        }
+    }
+
+    &:not(:disabled) {
+        &:active {
+            & ~ .custom-control-label {
+                &:before {
+                    background: rgba(0, 0, 0, 0.25);
+                    border-color: rgba(0, 0, 0, 0.25);
+                }
+            }
+        }
+    }
+}

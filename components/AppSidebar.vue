@@ -47,6 +47,7 @@
         <span>Organisms</span>
       </template>
       <el-menu-item index="/organisms">Organisms</el-menu-item>
+      <el-menu-item index="/organisms/page-footer">Page footer</el-menu-item>
       <el-menu-item index="/organisms/masthead">Masthead</el-menu-item>
     </el-submenu>
 
