@@ -29,7 +29,10 @@
                 <shortcut link="/atoms/more-link">More link</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
-                <shortcut link="/atoms/card">Typography</shortcut>
+                <shortcut link="/atoms/spinners">Spinners</shortcut>
+              </el-col>
+              <el-col :xs="12" :sm="8" :lg="6">
+                <shortcut link="/atoms/typography">Typography</shortcut>
               </el-col>
             </el-row>
         </div>
