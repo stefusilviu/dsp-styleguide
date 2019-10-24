@@ -16,10 +16,10 @@ $ npm start
 # generate static project
 $ npm run generate
 
-# generate CSS Stylesheet package
-$ npm run generate-stylesheet
+# Build CSS Stylesheet and JS package
+$ npm run build-package
 
-# generate static website and stylesheet
+# generate static website and build package
 $ npm run generate-all
 ```
 
@@ -32,13 +32,13 @@ In order to deploy the latest changes to DSP Styleguide app, all changes have to
 ``` bash
 $ git chekout master
 
-$ gulp style # to generate only the Saratoga Design stylesheet
+$ npm run build-package # to generate only the Saratoga Design stylesheet
 or
 $ npm run generate-all # to generate the Saratoga Design stylesheet and the DSP Styleguide app
 
 $ git checkout releases # checkout the releases branch
 
-$ git checkout master dist/stg-design.css # checkout only the Saratoga Design stylesheet
+$ git checkout master dist # checkout only the Saratoga Design package
 
 $ git commit -m "Commit message"
 
