@@ -99,6 +99,18 @@
     &.mastercard {
         background-image: url(/img/cc-mastercard.png);
     }
+
+    &.maestro {
+        background-image: url(/img/cc-maestro.png);
+    }
+
+    &.amex {
+        background-image: url(/img/cc-amex.png);
+    }
+
+    &.discover {
+        background-image: url(/img/cc-discover.png);
+    }
 }
 
 // Custom Bootstrap checkboxes and radios
