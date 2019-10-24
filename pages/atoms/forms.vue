@@ -56,6 +56,18 @@
             <input type="text" class="form-control cc-input" id="cardNumber">
             <div class="cc-type"></div>
           </div>
+          <div class="custom-control custom-checkbox mb-20 mt-30">
+            <input type="checkbox" class="custom-control-input" id="customCheck1">
+            <label class="custom-control-label" for="customCheck1">Check this custom checkbox</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+          </div>
+          <div class="custom-control custom-radio mb-20">
+            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+            <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+          </div>
         </div>
       </el-col>
       <el-col :sm="24" :md="12">
