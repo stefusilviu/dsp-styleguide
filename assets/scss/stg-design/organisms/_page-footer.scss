@@ -1,0 +1,22 @@
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-height: 650px) {
+  .footer.static {
+    position: static;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+.footer-container {
+  background-color: #f2f2f2;
+  overflow: hidden;
+  width: 100%;
+  box-shadow: 0 0 3px 0 rgba(103, 103, 103, 0.5);
+  padding: 15px 0;
+}

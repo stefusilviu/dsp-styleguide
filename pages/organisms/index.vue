@@ -14,6 +14,9 @@
               almost every website we visit.</p>
             <el-row :gutter="20">
               <el-col :xs="12" :sm="8" :lg="6">
+                <shortcut link="/organisms/page-footer">Page footer</shortcut>
+              </el-col>
+              <el-col :xs="12" :sm="8" :lg="6">
                 <shortcut link="/organisms/masthead">Masthead</shortcut>
               </el-col>
             </el-row>

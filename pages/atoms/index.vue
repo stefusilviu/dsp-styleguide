@@ -11,6 +11,9 @@
               broken down any further without ceasing to be functional.</p>
             <el-row :gutter="20">
               <el-col :xs="12" :sm="8" :lg="6">
+                <shortcut link="/atoms/animations">Animations</shortcut>
+              </el-col>
+              <el-col :xs="12" :sm="8" :lg="6">
                 <shortcut link="/atoms/button">Button</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
