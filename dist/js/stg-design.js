@@ -125,15 +125,20 @@ window.addEventListener('load', initStgSelect)
 then close all select boxes: */
 document.addEventListener("click", closeAllSelect);
 (function(){
-    var cleave = new Cleave('.cc-input', {
-        creditCard: true,
-        onCreditCardTypeChanged: function (type) {
-            var typeEl = this.element.parentNode.getElementsByClassName('cc-type')[0];
-            if (type !== 'unknown') {
-                typeEl.className = 'cc-type ' + type;
-            } else {
-                typeEl.className = 'cc-type';
-            }
+    window.addEventListener('DOMContentLoaded', function() {
+        var ccInputs = document.getElementsByClassName('cc-input');
+        if (ccInputs.length) {
+            var cleave = new Cleave('.cc-input', {
+                creditCard: true,
+                onCreditCardTypeChanged: function (type) {
+                    var typeEl = this.element.parentNode.getElementsByClassName('cc-type')[0];
+                    if (type !== 'unknown') {
+                        typeEl.className = 'cc-type ' + type;
+                    } else {
+                        typeEl.className = 'cc-type';
+                    }
+                }
+            });
         }
     });
 })();
