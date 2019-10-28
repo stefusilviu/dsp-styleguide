@@ -54,6 +54,17 @@
                   <prism language="css" :lineNumbers="true" :readonly="true" :code="css"></prism>
                 </el-tab-pane>
               </el-tabs>
+
+              <div class="docs">
+                <h4>Modifiers</h4>
+                <p>You can add classes to change the look of the spinner:</p>
+                <ul>
+                  <li><pre>black</pre> - changes the dots color in black</li>
+                  <li><pre>white</pre> - changes the dots color in white</li>
+                  <li><pre>show-spinner</pre> - by default the spinner is hidden. You have to add this classin order to make it visible.</li>
+                  <li><pre>fixed</pre> - add this class in order to make the spinner fixed related to window</li>
+                </ul>
+              </div>
             </el-card>
           </div>
         </el-col>
