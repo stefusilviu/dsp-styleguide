@@ -4,6 +4,6 @@
   "description": "Styleguide for DSP applications",
   "author": "Silviu Stefu",
   "files": [
-    "dist"
+    "/dist/**/*"
   ]
 }
