@@ -4035,68 +4035,68 @@ a.text-dark:hover, a.text-dark:focus {
 /*********** McClatchy Sans ***********/
 @font-face {
   font-family: "McClatchy Sans";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-sans-black.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-sans-black.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-sans-black.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-sans-black.woff2") format("woff2");
   font-weight: 900;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Sans";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-sans-bold.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-sans-bold.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-sans-bold.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-sans-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Sans";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-sans-semi.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-sans-semi.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-sans-semi.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-sans-semi.woff2") format("woff2");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Sans";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-sans-medium.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-sans-medium.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-sans-medium.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-sans-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Sans";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-sans-regular.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-sans-regular.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-sans-regular.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-sans-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Sans";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-sans-light.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-sans-light.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-sans-light.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-sans-light.woff2") format("woff2");
   font-weight: 300;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Sans";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-sans-thin.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-sans-thin.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-sans-thin.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-sans-thin.woff2") format("woff2");
   font-weight: 200;
   font-style: normal; }
 
 /************ McClatchy Serif **************/
 @font-face {
   font-family: "McClatchy Serif";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-serif-bold.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-serif-bold.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-serif-bold.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-serif-bold.woff2") format("woff2");
   font-weight: 700;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Serif";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-serif-semi.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-serif-semi.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-serif-semi.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-serif-semi.woff2") format("woff2");
   font-weight: 600;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Serif";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-serif-medium.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-serif-medium.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-serif-medium.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-serif-medium.woff2") format("woff2");
   font-weight: 500;
   font-style: normal; }
 
 @font-face {
   font-family: "McClatchy Serif";
-  src: url("../../static/fonts/mcclatchy/mcclatchy-serif-regular.woff") format("woff"), url("../../static/fonts/mcclatchy/mcclatchy-serif-regular.woff2") format("woff2");
+  src: url("../fonts/mcclatchy/mcclatchy-serif-regular.woff") format("woff"), url("../fonts/mcclatchy/mcclatchy-serif-regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal; }
 
