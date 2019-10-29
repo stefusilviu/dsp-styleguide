@@ -1,4 +1,4 @@
-$fontsPath: '../../static/fonts';
+$fontsPath: '../../static/fonts' !default; // Changed at build time to accomodate the npm installtion
 
 /*********** McClatchy Sans ***********/
 @font-face {
