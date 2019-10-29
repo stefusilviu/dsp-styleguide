@@ -39,6 +39,6 @@
     "sass-loader": "^8.0.0"
   },
   "files": [
-    "dist/stg-design.css"
+    "dist/**/*"
   ]
 }
