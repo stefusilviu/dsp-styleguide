@@ -6,12 +6,13 @@
   text-transform: uppercase;
 
   &:after {
-    content: "\f178";
+    content: "\f30b";
     display: inline-block;
     font-family: $font-awesome;
     font-size: 16px;
     margin-left: 5px;
     transition: transform .6s ease;
+    vertical-align: middle;
   }
 
   &:hover {

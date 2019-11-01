@@ -4032,6 +4032,13 @@ a.text-dark:hover, a.text-dark:focus {
 .text-reset {
   color: inherit !important; }
 
+html,
+body {
+  font-size: 14px;
+  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f4f4f4; }
+
 /*********** McClatchy Sans ***********/
 @font-face {
   font-family: "McClatchy Sans";
@@ -4108,7 +4115,7 @@ a.button {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  padding: .6em 1em .3em;
+  padding: .8em 1em .5em;
   margin: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -4188,12 +4195,13 @@ a.button {
   font-weight: 700;
   text-transform: uppercase; }
   .more-link:after {
-    content: "\f178";
+    content: "\f30b";
     display: inline-block;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     font-size: 16px;
     margin-left: 5px;
-    transition: transform .6s ease; }
+    transition: transform .6s ease;
+    vertical-align: middle; }
   .more-link:hover:after {
     transform: translateX(4px); }
   .more-link.blue {
@@ -4339,7 +4347,7 @@ h6 {
   cursor: pointer; }
   .password-switch:after {
     content: '\f070';
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: 0;
     right: 0;

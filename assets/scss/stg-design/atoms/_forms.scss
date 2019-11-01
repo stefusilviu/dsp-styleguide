@@ -18,7 +18,7 @@
         background: none;
         padding: 0.375rem 0.75rem;
         border-color: $red;
-        
+
         &:focus,
         &.focus {
             box-shadow: $red-shadow;
@@ -74,7 +74,7 @@
         &:after {
             content: '\f06e';
         }
-    } 
+    }
 }
 
 .cc-input {
@@ -151,7 +151,7 @@
 .custom-radio {
     .custom-control-label {
         padding-top: 2px;
-        
+
         &:before,
         &:after {
             height: 14px;
