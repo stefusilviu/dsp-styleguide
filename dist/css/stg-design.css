@@ -4302,6 +4302,13 @@ h6 {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600; }
 
+.byline {
+  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #989898;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.786em; }
+
 .form-control {
   height: 40px;
   width: 100%;
