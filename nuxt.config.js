@@ -1,3 +1,5 @@
+import webpack from 'webpack'
+
 module.exports = {
     head: {
         titleTemplate: '%s - DSP Styleguide',
@@ -7,6 +9,9 @@ module.exports = {
         ],
         meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
         script: [
+            { src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js', body: true },
+            { src: 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', body: true },
+            { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', body: true },
             { src: '/js/vendor/cleave.min.js', body: true },
             { src: '/js/select-box.js', body: true},
             { src: '/js/password-switch.js', body: true },

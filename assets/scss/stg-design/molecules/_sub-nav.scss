@@ -1,0 +1,17 @@
+// This is a modified version of .nav element from Bootstrap 4
+
+.sub-nav {
+    a {
+        color: $med-gray;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 5px 0;
+        margin-right: 10px;
+
+        &.active {
+            font-weight: 700;
+            color: $black;
+        }
+    }
+}
