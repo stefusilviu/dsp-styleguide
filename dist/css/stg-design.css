@@ -3803,6 +3803,70 @@ textarea.form-control {
     .custom-select {
       transition: none; } }
 
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none; }
+
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem; }
+  .nav-link:hover, .nav-link:focus {
+    text-decoration: none; }
+  .nav-link.disabled {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: default; }
+
+.nav-tabs {
+  border-bottom: 1px solid #dee2e6; }
+  .nav-tabs .nav-item {
+    margin-bottom: -1px; }
+  .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem; }
+    .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
+      border-color: #e9ecef #e9ecef #dee2e6; }
+    .nav-tabs .nav-link.disabled {
+      color: #6c757d;
+      background-color: transparent;
+      border-color: transparent; }
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    color: #495057;
+    background-color: #fff;
+    border-color: #dee2e6 #dee2e6 #fff; }
+  .nav-tabs .dropdown-menu {
+    margin-top: -1px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+
+.nav-pills .nav-link {
+  border-radius: 0.25rem; }
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #007bff; }
+
+.nav-fill .nav-item {
+  flex: 1 1 auto;
+  text-align: center; }
+
+.nav-justified .nav-item {
+  flex-basis: 0;
+  flex-grow: 1;
+  text-align: center; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
 .align-baseline {
   vertical-align: baseline !important; }
 
@@ -4032,6 +4096,61 @@ a.text-dark:hover, a.text-dark:focus {
 .text-reset {
   color: inherit !important; }
 
+.w-25 {
+  width: 25% !important; }
+
+.w-50 {
+  width: 50% !important; }
+
+.w-75 {
+  width: 75% !important; }
+
+.w-100 {
+  width: 100% !important; }
+
+.w-auto {
+  width: auto !important; }
+
+.h-25 {
+  height: 25% !important; }
+
+.h-50 {
+  height: 50% !important; }
+
+.h-75 {
+  height: 75% !important; }
+
+.h-100 {
+  height: 100% !important; }
+
+.h-auto {
+  height: auto !important; }
+
+.mw-100 {
+  max-width: 100% !important; }
+
+.mh-100 {
+  max-height: 100% !important; }
+
+.min-vw-100 {
+  min-width: 100vw !important; }
+
+.min-vh-100 {
+  min-height: 100vh !important; }
+
+.vw-100 {
+  width: 100vw !important; }
+
+.vh-100 {
+  height: 100vh !important; }
+
+html,
+body {
+  font-size: 14px;
+  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: #f4f4f4; }
+
 /*********** McClatchy Sans ***********/
 @font-face {
   font-family: "McClatchy Sans";
@@ -4108,7 +4227,7 @@ a.button {
   text-transform: uppercase;
   text-align: center;
   cursor: pointer;
-  padding: .6em 1em .3em;
+  padding: .8em 1em .5em;
   margin: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -4188,12 +4307,13 @@ a.button {
   font-weight: 700;
   text-transform: uppercase; }
   .more-link:after {
-    content: "\f178";
+    content: "\f30b";
     display: inline-block;
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     font-size: 16px;
     margin-left: 5px;
-    transition: transform .6s ease; }
+    transition: transform .6s ease;
+    vertical-align: middle; }
   .more-link:hover:after {
     transform: translateX(4px); }
   .more-link.blue {
@@ -4218,6 +4338,10 @@ a.button {
       border-color: #fff; }
   .card > *:last-child {
     margin-bottom: 0; }
+  @media (max-width: 575.98px) {
+    .card.mobile-full-width {
+      margin-left: -15px;
+      margin-right: -15px; } }
 
 p {
   font-size: 14px;
@@ -4294,6 +4418,13 @@ h6 {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600; }
 
+.byline {
+  font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #989898;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.786em; }
+
 .form-control {
   height: 40px;
   width: 100%;
@@ -4339,7 +4470,7 @@ h6 {
   cursor: pointer; }
   .password-switch:after {
     content: '\f070';
-    font-family: "FontAwesome";
+    font-family: "Font Awesome 5 Free";
     position: absolute;
     top: 0;
     right: 0;
@@ -5163,6 +5294,17 @@ summary, .summary {
 
 .p-100 {
   padding: 100px !important; }
+
+.sub-nav a {
+  color: #707070;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 5px 0;
+  margin-right: 10px; }
+  .sub-nav a.active {
+    font-weight: 700;
+    color: #222; }
 
 /* Masthead styles */
 .masthead-wrapper {
