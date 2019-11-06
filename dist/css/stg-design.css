@@ -4338,6 +4338,10 @@ a.button {
       border-color: #fff; }
   .card > *:last-child {
     margin-bottom: 0; }
+  @media (max-width: 575.98px) {
+    .card.mobile-full-width {
+      margin-left: -15px;
+      margin-right: -15px; } }
 
 p {
   font-size: 14px;
