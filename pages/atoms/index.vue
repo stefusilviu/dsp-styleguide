@@ -14,6 +14,9 @@
                 <shortcut link="/atoms/animations">Animations</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
+                <shortcut link="/atoms/billing-info">Billing info</shortcut>
+              </el-col>
+              <el-col :xs="12" :sm="8" :lg="6">
                 <shortcut link="/atoms/button">Button</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">

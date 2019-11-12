@@ -49,6 +49,13 @@
     color: $red;
 }
 
+// Fallback for Bootstrap 3 validator
+.has-error {
+    .invalid-feedback {
+        display: block;
+    }
+}
+
 .password-switch {
     position: absolute;
     top: 0;
@@ -84,10 +91,10 @@
 
 .cc-type {
     position: absolute;
-    height: $input-height - 10px;
-    bottom: 5px;
+    height: $input-height - 20px;
+    bottom: 10px;
     right: 0;
-    width: 60px;
+    width: 50px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
