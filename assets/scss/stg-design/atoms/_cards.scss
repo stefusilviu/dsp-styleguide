@@ -18,4 +18,11 @@
       margin-bottom: 0;
     }
   }
+
+  &.mobile-full-width {
+    @include media-breakpoint-down(xs) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+  }
 }

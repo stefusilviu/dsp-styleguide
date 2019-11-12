@@ -15,6 +15,7 @@
                 <shortcut link="/molecules/utilities">Utilities</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
+                <shortcut link="/molecules/sub-nav">Sub Nav</shortcut>
               </el-col>
               <el-col :xs="12" :sm="8" :lg="6">
               </el-col>

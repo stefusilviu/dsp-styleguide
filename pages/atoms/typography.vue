@@ -90,6 +90,30 @@
       </el-col>
     </el-row>
 
+    <el-divider content-position="left">Misc</el-divider>
+
+    <el-row :gutter="20">
+      <el-col :sm="24" :md="12">
+        <div class="page-content-demo stg-design mb-30">
+          <p class="byline">Byline lorem ipsum</p>
+        </div>
+      </el-col>
+      <el-col :sm="24" :md="12">
+        <div class="page-content-code mb-30">
+          <el-card>
+            <el-tabs>
+              <el-tab-pane label="HTML">
+                <prism language="html" :lineNumbers="true" :readonly="true" :code="miscHtml"></prism>
+              </el-tab-pane>
+              <el-tab-pane label="CSS">
+                <prism language="css" :lineNumbers="true" :readonly="true" :code="miscCss"></prism>
+              </el-tab-pane>
+            </el-tabs>
+          </el-card>
+        </div>
+      </el-col>
+    </el-row>
+
   </app-page>
 </template>
 
@@ -99,10 +123,12 @@
   import headingsHtml from '@/content/atoms/typography/headings-html-markup.html'
   import headlinesHtml from '@/content/atoms/typography/headlines-html-markup.html'
   import basicHtml from '@/content/atoms/typography/basic-html-markup.html'
+  import miscHtml from '@/content/atoms/typography/misc-html-markup.html'
 
   import headingsCss from '!!raw-loader!@/assets/scss/stg-design/atoms/typography/_headings.scss'
   import headlinesCss from '!!raw-loader!@/assets/scss/stg-design/atoms/typography/_headlines.scss'
   import basicCss from '!!raw-loader!@/assets/scss/stg-design/atoms/typography/_basic.scss'
+  import miscCss from '!!raw-loader!@/assets/scss/stg-design/atoms/typography/_misc.scss'
 
   export default {
     layout: 'page-layout',
@@ -119,9 +145,11 @@
         headingsHtml,
         headlinesHtml,
         basicHtml,
+        miscHtml,
         headingsCss,
         headlinesCss,
-        basicCss
+        basicCss,
+        miscCss
       }
     }
   }

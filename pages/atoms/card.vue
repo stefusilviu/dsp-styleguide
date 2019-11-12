@@ -15,6 +15,11 @@
                     Similique, officia perspiciatis! Impedit aliquid repellendus neque facere fugit incidunt commodi possimus, 
                     voluptates aperiam nam officiis ullam suscipit porro eum deserunt officia.</p>
               </div>
+              <div class="card impact">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Similique, officia perspiciatis! Impedit aliquid repellendus neque facere fugit incidunt commodi possimus, 
+                    voluptates aperiam nam officiis ullam suscipit porro eum deserunt officia.</p>
+              </div>
             </div>
           </div>
         </el-col>
@@ -24,6 +29,11 @@
               <el-tabs>
                 <el-tab-pane label="HTML">
                   <prism language="html" :lineNumbers="true" :readonly="true" :code="html"></prism>
+                  <div class="docs">
+                    <h4>Modifier classes:</h4>
+                    <prop name=".impact">Will change the card color scheme to dark</prop>
+                    <prop name=".mobile-full-width">Full width card on mobile only</prop>
+                  </div>
                 </el-tab-pane>
                 <el-tab-pane label="CSS">
                   <prism language="css" :lineNumbers="true" :readonly="true" :code="css"></prism>
