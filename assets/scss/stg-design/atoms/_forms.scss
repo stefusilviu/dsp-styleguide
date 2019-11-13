@@ -54,6 +54,14 @@
     .invalid-feedback {
         display: block;
     }
+    input {
+        border-color: $red;
+        &:focus,
+        &.focus {
+            border-color: $red;
+            box-shadow: $red-shadow;
+        }
+    }
 }
 
 .password-switch {
