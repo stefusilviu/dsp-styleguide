@@ -13,6 +13,7 @@ a.button {
   border-radius: 2px;
   align-self: flex-start;
   background-color: inherit;
+  position: relative;
 
   &.disabled,
   &:disabled,
@@ -101,6 +102,20 @@ a.button {
         content:'\f179';
         color: #000;
       }
+    }
+  }
+
+  .spinner {
+    background: none;
+  }
+
+  &.show-spinner {
+    > span:not(.spinner) {
+      opacity: 0;
+    }
+
+    > .spinner {
+      display: block;
     }
   }
 }
