@@ -72,7 +72,7 @@
 
         &:not(:last-child):after {
             content: "|";
-            color: $med-grey;
+            color: $med-gray;
             margin-left: 8px;
             font-size: 15px;
         }
