@@ -30,6 +30,9 @@
           <div class="mb-10">
             <button class="button promo full-width-mobile">Full width on mobile</button>
           </div>
+
+          <el-divider class="mt-40" content-position="left">Social buttons</el-divider>
+
           <div class="mb-10">
             <button class="button social facebook"><span>Sign in with facebook</span></button>
           </div>
@@ -38,6 +41,28 @@
           </div>
           <div class="mb-10">
             <button class="button social apple"><span>Sign in with apple</span></button>
+          </div>
+
+          <el-divider class="mt-40" content-position="left">Buttons with spinners</el-divider>
+
+          <div class="mb-10">
+            <button class="button impact" :class="{'show-spinner': showSpinner}" @click="showSpinner = !showSpinner">
+              <span>Click me to spin it</span>
+              <span class="spinner white">
+                <span class="spinner-dot"></span>
+                <span class="spinner-dot"></span>
+                <span class="spinner-dot"></span>
+              </span>
+            </button>
+
+            <button class="button ghost" :class="{'show-spinner': showSpinnerGhost}" @click="showSpinnerGhost = !showSpinnerGhost">
+              <span>Click me to spin the gost</span>
+              <span class="spinner">
+                <span class="spinner-dot"></span>
+                <span class="spinner-dot"></span>
+                <span class="spinner-dot"></span>
+              </span>
+            </button>
           </div>
         </div>
       </el-col>
@@ -87,7 +112,9 @@ export default {
     return {
       html,
       css,
-      component
+      component,
+      showSpinner: false,
+      showSpinnerGhost: false
     }
   }
 };

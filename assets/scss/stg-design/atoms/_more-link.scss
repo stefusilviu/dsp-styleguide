@@ -13,9 +13,16 @@
     margin-left: 5px;
     transition: transform .6s ease;
     vertical-align: middle;
+
+    // Fix for aligning the arrow with uncentered font
+    position: relative;
+    top: -2px;
   }
 
   &:hover {
+    text-decoration: none;
+    color: $med-shasta;
+
     &:after {
       transform: translateX(4px);
     }

@@ -5,6 +5,27 @@
 <button class="button">Text button</button>
 <button class="button promo full-width">Full width button</button>
 <button class="button promo full-width-mobile">Full width on mobile</button>
+
+// Social buttons
 <button class="button social facebook"><span>Sign in with facebook</span></button>
 <button class="button social google"><span>Sign in with google</span></button>
 <button class="button social apple"><span>Sign in with apple</span></button>
+
+// Spinner buttons
+<button class="button impact" :class="{'show-spinner': showSpinner}" @click="showSpinner = !showSpinner">
+    <span>Click me to spin it</span>
+    <span class="spinner white">
+        <span class="spinner-dot"></span>
+        <span class="spinner-dot"></span>
+        <span class="spinner-dot"></span>
+    </span>
+</button>
+
+<button class="button ghost" :class="{'show-spinner': showSpinnerGhost}" @click="showSpinnerGhost = !showSpinnerGhost">
+    <span>Click me to spin the gost</span>
+    <span class="spinner">
+        <span class="spinner-dot"></span>
+        <span class="spinner-dot"></span>
+        <span class="spinner-dot"></span>
+    </span>
+</button>
