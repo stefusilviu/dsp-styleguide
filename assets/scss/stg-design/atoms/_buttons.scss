@@ -15,14 +15,6 @@ a.button {
   background-color: inherit;
   position: relative;
 
-  &.disabled,
-  &:disabled,
-  &.inactive {
-    cursor: default;
-    pointer-events: none;
-    opacity: 0.8;
-  }
-
   &.impact {
     background-color: $dark-gray;
     color: $white;
@@ -117,5 +109,13 @@ a.button {
     > .spinner {
       display: block;
     }
+  }
+
+  &.disabled,
+  &:disabled,
+  &.inactive {
+    cursor: default;
+    pointer-events: none;
+    background-color: $light-gray;
   }
 }

@@ -4264,7 +4264,8 @@ body {
   font-size: 14px;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1.5;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  color: #222; }
 
 /*********** McClatchy Sans ***********/
 @font-face {
@@ -4350,13 +4351,6 @@ a.button {
   align-self: flex-start;
   background-color: inherit;
   position: relative; }
-  button.disabled, button:disabled, button.inactive,
-  a.button.disabled,
-  a.button:disabled,
-  a.button.inactive {
-    cursor: default;
-    pointer-events: none;
-    opacity: 0.8; }
   button.impact,
   a.button.impact {
     background-color: #373737;
@@ -4424,6 +4418,13 @@ a.button {
   button.show-spinner > .spinner,
   a.button.show-spinner > .spinner {
     display: block; }
+  button.disabled, button:disabled, button.inactive,
+  a.button.disabled,
+  a.button:disabled,
+  a.button.inactive {
+    cursor: default;
+    pointer-events: none;
+    background-color: #989898; }
 
 .more-link {
   color: #989898;
