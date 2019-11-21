@@ -30,6 +30,12 @@ summary, .summary {
   text-decoration: underline;
 }
 
+.text-capitalize-first { // can be used only on <p> element
+  &::first-letter {
+    text-transform: uppercase;
+  }
+}
+
 .no-shadow {
   box-shadow: none;
 }

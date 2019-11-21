@@ -4317,9 +4317,9 @@ a.button {
   font: 600 14px "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   line-height: 18px;
   text-transform: uppercase;
-  text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  padding: .8em 1em .5em;
+  padding: .6em 1em .6em;
   margin: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -4327,6 +4327,9 @@ a.button {
   align-self: flex-start;
   background-color: inherit;
   position: relative; }
+  button:hover,
+  a.button:hover {
+    text-decoration: none; }
   button.disabled, button:disabled, button.inactive,
   a.button.disabled,
   a.button:disabled,
@@ -4358,7 +4361,8 @@ a.button {
       background-color: #fff; }
   button.full-width,
   a.button.full-width {
-    width: 100%; }
+    width: 100%;
+    text-align: center; }
   @media (max-width: 575.98px) {
     button.full-width-mobile,
     a.button.full-width-mobile {
@@ -4902,6 +4906,9 @@ summary, .summary {
 
 .underline {
   text-decoration: underline; }
+
+.text-capitalize-first::first-letter {
+  text-transform: uppercase; }
 
 .no-shadow {
   box-shadow: none; }
