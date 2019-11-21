@@ -1,71 +1,100 @@
-summary, .summary {
-  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+summary,
+.summary {
+    font: 400 14px/1.5em "McClatchy Sans", sans-serif;
 }
 
 .small {
-  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+    font: 400 11px/1.5em "McClatchy Sans", sans-serif;
 }
 
 .caps {
-  text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .sans {
-  font-family: $ff-sans;
+    font-family: $ff-sans;
 }
 
 .serif {
-  font-family: $ff-serif;
+    font-family: $ff-serif;
 }
 
 .soft {
-  font-weight: 400;
+    font-weight: 400;
 }
 
 .bold {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .underline {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-.text-capitalize-first { // can be used only on <p> element
-  &::first-letter {
-    text-transform: uppercase;
-  }
+.text-capitalize-first {
+    // can be used only on <p> element
+    &::first-letter {
+        text-transform: uppercase;
+    }
 }
 
 .no-shadow {
-  box-shadow: none;
+    box-shadow: none;
 }
 
 .relative {
-  position: relative;
+    position: relative;
 }
 
-.hidden, [hidden] {
-  display: none;
+.hidden,
+[hidden] {
+    display: none;
 }
 
 // Generate spacing utilities
 $spaces: 0 5 10 15 20 25 30 35 40 45 50 60 70 80 90 100;
 $sides: ("t": "top", "r": "right", "b": "bottom", "l": "left");
+$breakpoints: "sm" "md" "lg" "xl";
 
 @each $space in $spaces {
+
+    .m-#{$space} {
+        margin: #{$space}px !important;
+    }
+
     @each $sideAbr, $sideName in $sides {
         .m#{$sideAbr}-#{$space} {
             margin-#{$sideName}: #{$space}px !important;
         }
+    }
+
+    @each $sideAbr, $sideName in $sides {
+        @each $breakpoint in $breakpoints {
+            .m#{$sideAbr}-#{$breakpoint}-#{$space} {
+                @include media-breakpoint-up(#{$breakpoint}) {
+                    margin-#{$sideName}: #{$space}px !important;
+                }
+            }
+        }
+    }
+
+    .p-#{$space} {
+        padding: #{$space}px !important;
+    }
+
+    @each $sideAbr, $sideName in $sides {
         .p#{$sideAbr}-#{$space} {
             padding-#{$sideName}: #{$space}px !important;
         }
     }
 
-    .m-#{$space} {
-        margin: #{$space}px !important;
-    }
-    .p-#{$space} {
-        padding: #{$space}px !important;
+    @each $sideAbr, $sideName in $sides {
+        @each $breakpoint in $breakpoints {
+            .p#{$sideAbr}-#{$breakpoint}-#{$space} {
+                @include media-breakpoint-up(#{$breakpoint}) {
+                    padding-#{$sideName}: #{$space}px !important;
+                }
+            }
+        }
     }
 }
