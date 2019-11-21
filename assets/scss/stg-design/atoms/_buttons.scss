@@ -4,9 +4,9 @@ a.button {
   font: 600 14px $ff-sans;
   line-height: 18px;
   text-transform: uppercase;
-  text-align: center;
+  text-decoration: none;
   cursor: pointer;
-  padding: .8em 1em .5em;
+  padding: .6em 1em .6em;
   margin: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -14,6 +14,18 @@ a.button {
   align-self: flex-start;
   background-color: inherit;
   position: relative;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &.disabled,
+  &:disabled,
+  &.inactive {
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.8;
+  }
 
   &.impact {
     background-color: $dark-gray;
@@ -46,6 +58,7 @@ a.button {
 
   &.full-width {
     width: 100%;
+    text-align: center;
   }
 
   &.full-width-mobile {
