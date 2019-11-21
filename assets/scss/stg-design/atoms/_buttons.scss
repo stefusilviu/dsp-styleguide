@@ -123,4 +123,12 @@ a.button {
       display: block;
     }
   }
+
+  &.disabled,
+  &:disabled,
+  &.inactive {
+    cursor: default;
+    pointer-events: none;
+    background-color: $light-gray;
+  }
 }
