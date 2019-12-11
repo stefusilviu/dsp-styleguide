@@ -42,6 +42,7 @@
       <el-menu-item index="/molecules">Molecules</el-menu-item>
       <el-menu-item index="/molecules/utilities">Utilities</el-menu-item>
       <el-menu-item index="/molecules/sub-nav">Sub Nav</el-menu-item>
+      <el-menu-item index="/molecules/expandable-card">Expandable card</el-menu-item>
     </el-submenu>
 
     <el-submenu index="organisms-sub">

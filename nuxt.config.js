@@ -15,6 +15,7 @@ module.exports = {
             { src: '/js/vendor/cleave.min.js', body: true },
             { src: '/js/select-box.js', body: true},
             { src: '/js/password-switch.js', body: true },
+            { src: '/js/card-toggle.js', body: true },
             { src: '/js/plugins.js', body: true }
         ],
     },
