@@ -25,6 +25,9 @@ $ npm run generate-all
 
 ## How to release
 
+### QA build
+Netlify will take the `develop` branch, will run the build task and deploy to [dsp-styleguide-qa.netlify.com](https://dsp-styleguide-qa.netlify.com/)
+
 #### Deploy DSP Styleguide
 In order to deploy the latest changes to DSP Styleguide app, all changes have to be merged in `master` branch. Netlify will take the branch, will run the build task and deploy to [dsp-styleguide.netlify.com](https://dsp-styleguide.netlify.com/)
 
@@ -44,7 +47,7 @@ $ git commit -m "Commit message"
 
 $ git push
 
-# Then create te release
+# Then create the release
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
