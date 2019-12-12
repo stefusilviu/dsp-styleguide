@@ -1,0 +1,43 @@
+.card {
+  &-expandable {
+    padding: 15px;
+
+    &-title {
+      position: relative;
+    }
+
+    &-content {
+      display: none;
+      transition: all .4s ease-in-out;
+      overflow: hidden;
+    }
+
+    &.open {
+      .card-expandable-content {
+        display: block;
+      }
+      .card-toggle-button {
+        &:before {
+          content: attr(data-toggle-hide);
+        }
+      }
+    }
+  }
+
+  &-toggle-button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-transform: none;
+    color: $med-gray;
+    font-weight: 400;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+
+    &:before {
+      content: attr(data-toggle-show);
+    }
+  }
+}

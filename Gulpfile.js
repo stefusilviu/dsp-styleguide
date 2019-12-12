@@ -33,6 +33,7 @@ function buildJS() {
     './static/js/vendor/*.js',
     './static/js/password-switch.js',
     './static/js/select-box.js',
+    './static/js/card-toggle.js',
     './static/js/plugins.js'
   ]
   const jsDest = './dist/js'
