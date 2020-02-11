@@ -4550,10 +4550,11 @@ a.button {
     a.button.social span {
       display: inline-block;
       line-height: 18px; }
-    button.social.facebook:before, button.social.google:before, button.social.apple:before,
+    button.social.facebook:before, button.social.google:before, button.social.apple:before, button.social.twitter:before,
     a.button.social.facebook:before,
     a.button.social.google:before,
-    a.button.social.apple:before {
+    a.button.social.apple:before,
+    a.button.social.twitter:before {
       content: '';
       font-family: "Font Awesome 5 Brands";
       display: inline-block;
@@ -4570,6 +4571,10 @@ a.button {
     a.button.social.apple:before {
       content: '\f179';
       color: #000; }
+    button.social.twitter:before,
+    a.button.social.twitter:before {
+      content: '\f099';
+      color: #00aae5; }
   button .spinner,
   a.button .spinner {
     background: none; }
