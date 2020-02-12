@@ -1,6 +1,6 @@
 {
   "name": "dsp-styleguide",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Styleguide for DSP applications",
   "scripts": {
     "dev": "nuxt",
