@@ -33,7 +33,7 @@ In order to deploy the latest changes to DSP Styleguide app, all changes have to
 
 #### Deploy DSP Stylesheet package
 ``` bash
-$ git chekout master
+$ git checkout master
 
 $ npm run build-package # to generate only the Saratoga Design stylesheet
 or
