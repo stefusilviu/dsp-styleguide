@@ -19,6 +19,9 @@
       <el-col :xs="12" :sm="8" :lg="6">
         <color name="Light gray" color="#989898"></color>
       </el-col>
+	  <el-col :xs="12" :sm="8" :lg="6">
+        <color name="Pearl" color="#f4f4f4"></color>
+      </el-col>
       <el-col :xs="12" :sm="8" :lg="6">
         <color name="Dark shasta" color="#1B417F"></color>
       </el-col>
