@@ -156,8 +156,8 @@ function toggle(toggleBtn, card) {
 }
 
 window.addEventListener('load', initCardToggle);
-(function(){
-    window.addEventListener('DOMContentLoaded', function() {
+(function () {
+    window.addEventListener('load', function () {
         var ccInputs = document.getElementsByClassName('cc-input');
         if (ccInputs.length) {
             var cleave = new Cleave('.cc-input', {

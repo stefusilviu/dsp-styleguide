@@ -7781,6 +7781,7 @@ summary,
   box-shadow: 0 0 3px 0 rgba(103, 103, 103, 0.5);
   padding: 15px 0; }
 
+/* Text Color */
 .black {
   color: #222; }
 
@@ -7805,6 +7806,10 @@ summary,
 .red {
   color: #D63031; }
 
+.pearl {
+  color: #f4f4f4; }
+
+/* Background Color */
 .bg-black {
   background: #222; }
 
@@ -7828,3 +7833,6 @@ summary,
 
 .bg-red {
   background: #D63031; }
+
+.bg-pearl {
+  background: #f4f4f4; }
