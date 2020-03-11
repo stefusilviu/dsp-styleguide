@@ -1,19 +1,31 @@
 <template>
   <app-page :narrow="true">
-    <h2 class="page-title">List</h2>
+    <h2 class="page-title">Terms Modal</h2>
     <div class="page-description mb-30">
-      <p>Here are defined the lists used in Saratoga design.</p>
+      <p>Saratoga terms and conditions modal. For demo purposes the design is not accurate in this page. Use the supplied HTML to position the modal and add the backdrop.</p>
     </div>
 
     <el-row :gutter="20">
       <el-col :sm="24" :md="12">
-        <h4>Demo</h4>
+        <h4>Design</h4>
         <div class="page-content-demo stg-design mb-30">
-          <ul class="list">
-            <li>Exclusive extras, like the eEdition and our stories on Facebook and Google News.</li>
-            <li>Explore newsletters, podcasts, subscriber-only content, interactive media and video.</li>
-            <li>Earn rewards points for reading, playing, watching and more.</li>
-          </ul>
+          <div class="stg-modal">
+            <div class="stg-modal-backdrop"></div>
+            <div class="stg-modal-content">
+              <div class="stg-modal-content-title">
+                <h3>Terms and conditions</h3>
+              </div>
+              <div class="stg-modal-content-description">
+                By creating and account, you agree to our
+                <a href="#">Terms of service</a> and
+                <a href="#">Privacy Policy.</a>
+              </div>
+              <div class="stg-modal-content-buttons">
+                <button class="button ghost full-width">Agree</button>
+                <button class="button text full-width">Cancel</button>
+              </div>
+            </div>
+          </div>
         </div>
       </el-col>
       <el-col :sm="24" :md="12">
