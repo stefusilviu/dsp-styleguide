@@ -10,8 +10,8 @@
         <h4>Design</h4>
         <div class="page-content-demo stg-design mb-30">
           <div class="stg-modal">
-            <div class="stg-modal-backdrop"></div>
-            <div class="stg-modal-content">
+            <!-- <div class="stg-modal-backdrop"> -->
+            <div class="stg-modal-content" style="position: relative">
               <div class="stg-modal-content-title">
                 <h3>Terms and conditions</h3>
               </div>
@@ -25,6 +25,7 @@
                 <button class="button text full-width">Cancel</button>
               </div>
             </div>
+            <!-- </div> -->
           </div>
         </div>
       </el-col>
@@ -49,8 +50,8 @@
 <script>
 import AppPage from "@/components/AppPage";
 
-import html from "@/content/atoms/lists/html-markup.html";
-import css from "!!raw-loader!@/assets/scss/stg-design/atoms/_lists.scss";
+import html from "@/content/atoms/modal/html-markup.html";
+import css from "!!raw-loader!@/assets/scss/stg-design/atoms/_modal.scss";
 
 export default {
   layout: "page-layout",
@@ -59,7 +60,7 @@ export default {
   },
   head() {
     return {
-      title: "List | Atoms"
+      title: "Modal | Atoms"
     };
   },
   data() {
