@@ -1,6 +1,5 @@
 <template>
   <app-page :narrow="true">
-
     <h2 class="page-title">Colors</h2>
     <div class="page-description mb-30">
       <p>The following are all the colors used in Saratoga design. The colors are used to emphasize element or create a better visual hierarchy.</p>
@@ -18,6 +17,9 @@
       </el-col>
       <el-col :xs="12" :sm="8" :lg="6">
         <color name="Light gray" color="#989898"></color>
+      </el-col>
+      <el-col :xs="12" :sm="8" :lg="6">
+        <color name="Pearl" color="#f4f4f4" invert="true"></color>
       </el-col>
       <el-col :xs="12" :sm="8" :lg="6">
         <color name="Dark shasta" color="#1B417F"></color>
@@ -42,24 +44,23 @@
         </el-tabs>
       </el-card>
     </div>
-
   </app-page>
 </template>
 
 <script>
-  import css from "!!raw-loader!@/assets/scss/stg-design/base/_colors.scss";
+import css from "!!raw-loader!@/assets/scss/stg-design/base/_colors.scss";
 
-  export default {
-    layout: 'page-layout',
-    head () {
-      return {
-        title: 'Colors | Base',
-      }
-    },
-    data() {
-      return {
-        css,
-      };
-    }
+export default {
+  layout: "page-layout",
+  head() {
+    return {
+      title: "Colors | Base"
+    };
+  },
+  data() {
+    return {
+      css
+    };
   }
+};
 </script>

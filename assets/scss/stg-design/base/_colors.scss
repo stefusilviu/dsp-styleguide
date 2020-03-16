@@ -1,3 +1,4 @@
+/* Text Color */
 .black {
     color: $black;
 }
@@ -22,7 +23,11 @@
 .red {
     color: $red;
 }
+.pearl {
+    color: $pearl;
+}
 
+/* Background Color */
 .bg-black {
     background: $black;
 }
@@ -46,4 +51,7 @@
 }
 .bg-red {
     background: $red;
+}
+.bg-pearl {
+    background: $pearl;
 }
