@@ -154,7 +154,8 @@ function toggle(toggleBtn, card) {
   }
 }
 
-window.addEventListener('load', initCardToggle);
+window.addEventListener('DOMContentLoaded', initCardToggle);
+
 (function () {
     window.addEventListener('load', function () {
         var ccInputs = document.getElementsByClassName('cc-input');
