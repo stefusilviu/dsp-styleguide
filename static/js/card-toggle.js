@@ -28,4 +28,4 @@ function toggle(toggleBtn, card) {
   }
 }
 
-window.addEventListener('load', initCardToggle);
+window.addEventListener('DOMContentLoaded', initCardToggle);
