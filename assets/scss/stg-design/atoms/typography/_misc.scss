@@ -5,3 +5,21 @@
     font-weight: 600;
     font-size: 0.786em;
 }
+//this is from a fix on MPP-3280 @*12
+ @media only screen and (max-width: 375px) {
+
+  .step {
+    & > li {
+      font-size: 10px !important;
+    }
+  }
+  .ip5 {
+    & > label, p, a {
+      font-size: 12px !important;
+      .more-link::after {
+        vertical-align: sub
+      }
+    }
+  }
+   .form-group.ip5 label{ font-size: 12px !important;}
+}
