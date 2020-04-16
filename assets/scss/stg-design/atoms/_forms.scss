@@ -37,6 +37,13 @@
         color: $black;
         margin-bottom: 10px;
     }
+
+    .elnuevoherald-label-min-height {
+        min-height: 42px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
 }
 
 .form-text {
