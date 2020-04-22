@@ -1,12 +1,12 @@
 .byline {
-    font-family: $ff-sans;
-    color: $light-gray;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 0.786em;
+  font-family: $ff-sans;
+  color: $light-gray;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.786em;
 }
 //this is from a fix on MPP-3280 @*12
- @media only screen and (max-width: 375px) {
+@media only screen and (max-width: 375px) {
 
   .step {
     & > li {
@@ -20,5 +20,8 @@
         vertical-align: sub
       }
     }
+  }
+  label.control-label {
+    font-size: 12px;
   }
 }
