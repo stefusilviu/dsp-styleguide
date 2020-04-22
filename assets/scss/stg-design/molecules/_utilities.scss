@@ -42,6 +42,10 @@ summary,
     box-shadow: none;
 }
 
+.big-shadow {
+    box-shadow: $big-shadow;
+}
+
 .relative {
     position: relative;
 }
@@ -96,5 +100,27 @@ $breakpoints: "sm" "md" "lg" "xl";
                 }
             }
         }
+    }
+}
+
+// Negative margins
+@media (max-width: 479px) {
+    .nm-xs {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .nm-sm {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .nm-md {
+        margin-left: -15px !important;
+        margin-right: -15px !important;
     }
 }
