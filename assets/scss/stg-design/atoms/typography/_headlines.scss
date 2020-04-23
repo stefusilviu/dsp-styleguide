@@ -39,3 +39,26 @@
     font-family: $ff-sans;
     font-weight: 600;
 }
+
+.page-headline {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .narrow {
+        max-width: 640px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.registration-secondary {
+    padding-top: 50px;
+}
