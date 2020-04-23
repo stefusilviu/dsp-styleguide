@@ -4693,7 +4693,6 @@ a.button {
   text-transform: uppercase; }
   .more-link:after {
     content: "\f30b";
-    display: inline-block;
     font-family: "Font Awesome 5 Free";
     font-size: 16px;
     margin-left: 5px;
@@ -4808,12 +4807,39 @@ h6 {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 600; }
 
+.page-headline {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .page-headline .center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+  .page-headline .narrow {
+    max-width: 640px; }
+  @media screen and (min-width: 768px) {
+    .page-headline {
+      margin-top: 30px;
+      margin-bottom: 20px; } }
+
+.registration-secondary {
+  padding-top: 50px; }
+
 .byline {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   color: #989898;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.786em; }
+
+@media only screen and (max-width: 375px) {
+  .step > li {
+    font-size: 10px !important; }
+  .ip5 > label, .ip5 p, .ip5 a {
+    font-size: 12px !important; }
+    .ip5 > label .more-link::after, .ip5 p .more-link::after, .ip5 a .more-link::after {
+      vertical-align: sub; }
+  label.control-label {
+    font-size: 12px; } }
 
 .form-control {
   height: 40px;
@@ -4843,6 +4869,11 @@ h6 {
     font-weight: 600;
     color: #222;
     margin-bottom: 10px; }
+  .form-group .elnuevoherald-label-min-height {
+    min-height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
 
 .form-text, .invalid-feedback {
   font-size: 0.785em;
@@ -5171,7 +5202,7 @@ h6 {
   width: 100%;
   height: 100%;
   margin: auto;
-  background-color: #fff; }
+  background-color: rgba(250, 250, 250, 0.9); }
 
 .stg-modal-content {
   position: absolute;
@@ -5233,6 +5264,9 @@ summary,
 
 .no-shadow {
   box-shadow: none; }
+
+.big-shadow {
+  box-shadow: 0 8px 17px 0 rgba(34, 34, 34, 0.2), 0 6px 20px 0 rgba(34, 34, 34, 0.19); }
 
 .relative {
   position: relative; }
@@ -7768,6 +7802,21 @@ summary,
 @media (min-width: 1200px) {
   .pl-xl-100 {
     padding-left: 100px !important; } }
+
+@media (max-width: 479px) {
+  .nm-xs {
+    margin-left: -15px !important;
+    margin-right: -15px !important; } }
+
+@media (max-width: 767px) {
+  .nm-sm {
+    margin-left: -15px !important;
+    margin-right: -15px !important; } }
+
+@media (max-width: 991px) {
+  .nm-md {
+    margin-left: -15px !important;
+    margin-right: -15px !important; } }
 
 .sub-nav a {
   color: #707070;
