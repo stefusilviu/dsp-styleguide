@@ -154,7 +154,7 @@ function toggle(toggleBtn, card) {
   }
 }
 
-window.addEventListener('DOMContentLoaded', initCardToggle);
+window.addEventListener('load', initCardToggle);
 
 (function () {
     window.addEventListener('load', function () {
