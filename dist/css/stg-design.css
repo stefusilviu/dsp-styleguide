@@ -4689,7 +4689,7 @@ a.button {
   color: #989898;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase; }
   .more-link:after {
     content: "\f30b";
@@ -4823,6 +4823,17 @@ h6 {
 
 .registration-secondary {
   padding-top: 50px; }
+
+.page-heading {
+  font-size: 14px;
+  margin-bottom: 0; }
+  .page-heading a {
+    font-size: 14px; }
+  @media (min-width: 992px) {
+    .page-heading {
+      font-size: 19px; }
+      .page-heading a {
+        font-size: 19px; } }
 
 .byline {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
