@@ -31,6 +31,7 @@ function buildJS() {
   const jsFiles = [
     './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
     './static/js/vendor/*.js',
+    './static/js/delegate-event.js',
     './static/js/password-switch.js',
     './static/js/select-box.js',
     './static/js/card-toggle.js',

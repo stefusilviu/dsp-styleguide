@@ -4815,6 +4815,16 @@ h6 {
   font-weight: 600;
   font-size: 0.786em; }
 
+@media only screen and (max-width: 375px) {
+  .step > li {
+    font-size: 10px !important; }
+  .ip5 > label, .ip5 p, .ip5 a {
+    font-size: 12px !important; }
+    .ip5 > label .more-link::after, .ip5 p .more-link::after, .ip5 a .more-link::after {
+      vertical-align: sub; }
+  label.control-label {
+    font-size: 12px; } }
+
 .form-control {
   height: 40px;
   width: 100%;
@@ -4843,6 +4853,11 @@ h6 {
     font-weight: 600;
     color: #222;
     margin-bottom: 10px; }
+  .form-group .elnuevoherald-label-min-height {
+    min-height: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; }
 
 .form-text, .invalid-feedback {
   font-size: 0.785em;
