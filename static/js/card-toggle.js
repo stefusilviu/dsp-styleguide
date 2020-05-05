@@ -2,7 +2,6 @@ function initCardToggle(element) {
     toggle(element,element.parentNode.parentNode);
 }
 
-
 function toggle(toggleBtn, card) {
   var content = card.getElementsByClassName("card-expandable-content")[0];
   if (!card.classList.contains('open')) {
@@ -20,5 +19,3 @@ function toggle(toggleBtn, card) {
     }, { once: true });
   }
 }
-
-window.addEventListener('load', initCardToggle);
