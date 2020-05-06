@@ -4587,6 +4587,7 @@ a.button {
   text-decoration: none;
   cursor: pointer;
   padding: .6em 1em .6em;
+  padding-bottom: 5px;
   margin: 0;
   border: 1px solid transparent;
   box-sizing: border-box;
@@ -4931,7 +4932,7 @@ h6 {
 .cc-type {
   position: absolute;
   height: 20px;
-  bottom: 10px;
+  bottom: 30px;
   right: 0;
   width: 50px;
   background-repeat: no-repeat;
