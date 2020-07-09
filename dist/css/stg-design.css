@@ -5247,6 +5247,28 @@ h6 {
   .stg-modal-content-buttons button.text {
     color: #fff; }
 
+.step {
+  border-bottom: 2px solid #c6c6c6; }
+  .step > li {
+    float: left;
+    text-transform: uppercase;
+    margin: 0 25px; }
+  .step > li.selected {
+    font-weight: bold;
+    position: relative; }
+  .step > li.selected::after {
+    content: " ";
+    border-bottom: 4px solid #333;
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    right: -5px;
+    left: -5px; }
+  .step > li:first-child {
+    margin-left: 5px; }
+  .step > li:last-child {
+    margin-right: 5px; }
+
 summary,
 .summary {
   font: 400 14px/1.5em "McClatchy Sans", sans-serif; }

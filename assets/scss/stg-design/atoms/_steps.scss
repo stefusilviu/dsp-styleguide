@@ -1,0 +1,32 @@
+.step {
+  border-bottom: 2px solid #c6c6c6;
+
+  > li {
+    float: left;
+    text-transform: uppercase;
+    margin: 0 25px;
+  }
+
+  > li.selected {
+    font-weight: bold;
+    position: relative;
+  }
+
+  > li.selected::after {
+    content: " ";
+    border-bottom: 4px solid #333;
+    display: block;
+    position: absolute;
+    bottom: -8px;
+    right: -5px;
+    left: -5px;
+  }
+
+  > li:first-child {
+    margin-left: 5px;
+  }
+
+  > li:last-child {
+    margin-right: 5px;
+  }
+}
