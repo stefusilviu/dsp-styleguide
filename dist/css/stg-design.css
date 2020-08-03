@@ -7842,6 +7842,22 @@ summary,
     font-weight: 700;
     color: #222; }
 
+.sub-nav.white li {
+  padding-right: 0; }
+
+.sub-nav.white a {
+  display: block;
+  height: 38px;
+  color: #31409f;
+  padding: 10px 0;
+  font-weight: 500;
+  margin-right: 0; }
+
+.sub-nav.white a.active {
+  font-weight: 700;
+  background-color: rgba(49, 64, 159, 0.15);
+  color: #31409f; }
+
 .card-expandable {
   padding: 15px; }
   .card-expandable-title {
@@ -7935,15 +7951,16 @@ summary,
       width: auto;
       margin: 0 auto;
       padding: 0 20px; }
-  @media (min-width: 992px) {
+    #masthead .logo.no-shadow {
+      box-shadow: none; }
+  @media (min-width: 1200px) {
     #masthead .logo a {
       text-align: left; } }
 
 .masthead-container {
   position: relative;
   margin-left: -15px;
-  margin-right: -15px;
-  max-width: 1140px; }
+  margin-right: -15px; }
 
 /* Masthead links */
 .masthead-links {
@@ -7972,7 +7989,7 @@ summary,
     .masthead-links li a {
       color: #707070; }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   #masthead {
     height: 64px;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13); }
@@ -7986,14 +8003,14 @@ summary,
   .masthead-links {
     float: right;
     list-style: none;
-    position: absolute;
-    right: 15px;
-    bottom: 0;
+    position: relative;
+    right: 25px;
+    bottom: 34px;
     background: none;
     border: none;
     line-height: 34px; } }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .masthead-container {
     width: auto; } }
 
@@ -8047,6 +8064,9 @@ summary,
 /* Background Color */
 .bg-black {
   background: #222; }
+
+.bg-white {
+  background: #fff; }
 
 .bg-dark-gray {
   background: #373737; }
