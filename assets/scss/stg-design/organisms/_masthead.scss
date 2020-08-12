@@ -31,9 +31,13 @@
             margin: 0 auto;
             padding: 0 20px;
         }
+
+        &.no-shadow {
+            box-shadow: none;
+        }
     }
 
-    @media (min-width: 992px) {
+    @media (min-width: 1200px) {
         .logo a {
             text-align: left;
         }
@@ -44,7 +48,6 @@
     position: relative;
     margin-left: -15px;
     margin-right: -15px;
-    max-width: 1140px;
 }
 
 /* Masthead links */
@@ -83,7 +86,7 @@
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     #masthead {
         height: 64px;
         box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13);
@@ -103,16 +106,16 @@
     .masthead-links {
         float: right;
         list-style: none;
-        position: absolute;
-        right: 15px;
-        bottom: 0;
+        position: relative;
+        right: 25px;
+        bottom: 34px;
         background: none;
         border: none;
         line-height: 34px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
     .masthead-container {
         width: auto;
     }

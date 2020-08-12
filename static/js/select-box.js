@@ -71,7 +71,7 @@ function closeAllSelect(elmnt) {
   selectItems = document.getElementsByClassName("select-items");
   selected = document.getElementsByClassName("select-selected");
   for (i = 0; i < selected.length; i++) {
-    if (elmnt == selected[i]) {
+    if (elmnt === selected[i]) {
       arrNo.push(i)
     } else {
       selected[i].classList.remove("select-arrow-active");

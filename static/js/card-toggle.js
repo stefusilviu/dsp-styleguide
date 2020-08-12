@@ -1,13 +1,5 @@
-function initCardToggle() {
-  var button, parent;
-  button = document.querySelectorAll('[data-card-toggle="true"]');
-
-  for (var i = 0; i < button.length; i++) {
-    button[i].addEventListener("click", function (e) {
-      parent = this.parentNode.parentNode;
-      toggle(button[i], parent)
-    });
-  }
+function initCardToggle(element) {
+    toggle(element,element.parentNode.parentNode);
 }
 
 function toggle(toggleBtn, card) {
@@ -27,5 +19,3 @@ function toggle(toggleBtn, card) {
     }, { once: true });
   }
 }
-
-window.addEventListener('load', initCardToggle);
