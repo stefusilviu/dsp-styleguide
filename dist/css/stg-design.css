@@ -4687,7 +4687,7 @@ a.button {
     background-color: #989898; }
 
 .more-link {
-  color: #989898;
+  color: #707070;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -4839,7 +4839,7 @@ h6 {
 
 .byline {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #989898;
+  color: #707070;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.786em; }
@@ -4948,6 +4948,24 @@ h6 {
     background-image: url(/img/cc-amex.png); }
   .cc-type.discover {
     background-image: url(/img/cc-discover.png); }
+
+.cc-icon:before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 16px; }
+
+.cc-visa:before {
+  color: #1A1F71;
+  content: "\f1f0"; }
+
+.cc-mastercard:before {
+  content: "\f1f1"; }
+
+.cc-amex:before {
+  content: "\f1f3"; }
+
+.cc-discover:before {
+  content: "\f1f2"; }
 
 .custom-control input[type="checkbox"]:focus + .custom-control-label:before,
 .custom-control input[type="radio"]:focus + .custom-control-label:before {
@@ -7842,9 +7860,6 @@ summary,
     font-weight: 700;
     color: #222; }
 
-.sub-nav.white li {
-  padding-right: 0; }
-
 .sub-nav.white a {
   display: block;
   height: 38px;
@@ -7937,7 +7952,7 @@ summary,
   margin: 0; }
   #masthead .logo {
     position: relative;
-    padding: 12px 0 12px;
+    padding: 12px 0 0;
     margin: 0;
     box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13); }
     #masthead .logo a {
@@ -8013,6 +8028,12 @@ summary,
 @media (max-width: 1200px) {
   .masthead-container {
     width: auto; } }
+
+@media (max-width: 479px) {
+  .masthead-links li {
+    font-size: 11px; }
+    .masthead-links li a {
+      font-size: 11px; } }
 
 .footer {
   position: absolute;

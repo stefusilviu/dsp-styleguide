@@ -135,6 +135,29 @@
     }
 }
 
+.cc-icon:before {
+    font-family: $font-awesome-brands;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.cc-visa:before {
+   color: #1A1F71;
+   content: "\f1f0";
+}
+
+.cc-mastercard:before {
+    content: "\f1f1";
+}
+
+.cc-amex:before {
+    content: "\f1f3";
+}
+
+.cc-discover:before {
+    content: "\f1f2";
+}
+
 // Custom Bootstrap checkboxes and radios
 .custom-control {
     input[type="checkbox"],
