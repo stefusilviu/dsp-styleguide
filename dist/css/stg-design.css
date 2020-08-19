@@ -7849,6 +7849,12 @@ summary,
     margin-left: -15px !important;
     margin-right: -15px !important; } }
 
+@media (max-width: 574px) {
+  .nm-l {
+    margin-left: -15px !important; }
+  .nm-r {
+    margin-right: -15px !important; } }
+
 .sub-nav a {
   color: #707070;
   font-weight: 400;
