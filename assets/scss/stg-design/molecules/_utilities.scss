@@ -124,3 +124,12 @@ $breakpoints: "sm" "md" "lg" "xl";
         margin-right: -15px !important;
     }
 }
+
+@media (max-width: 574px) {
+  .nm-l {
+    margin-left: -15px !important;
+  }
+  .nm-r {
+    margin-right: -15px !important;
+  }
+}
