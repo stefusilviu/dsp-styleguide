@@ -1,5 +1,7 @@
-button,
-a.button {
+button {
+  height: 38px;
+}
+button, a.button {
   display: inline-block;
   font: 600 14px $ff-sans;
   line-height: 18px;
@@ -83,7 +85,7 @@ a.button {
     &.apple,
     &.twitter {
       &:before {
-        content:'';
+        content: '';
         font-family: $font-awesome-brands;
         display: inline-block;
         margin-right: 10px;
@@ -92,28 +94,28 @@ a.button {
 
     &.facebook {
       &:before {
-        content:'\f39e';
+        content: '\f39e';
         color: #3b5998;
       }
     }
 
     &.google {
       &:before {
-        content:'\f1a0';
+        content: '\f1a0';
         color: #b82000;
       }
     }
 
     &.apple {
       &:before {
-        content:'\f179';
+        content: '\f179';
         color: #000;
       }
     }
 
     &.twitter {
       &:before {
-        content:'\f099';
+        content: '\f099';
         color: #00aae5;
       }
     }
@@ -140,4 +142,19 @@ a.button {
     pointer-events: none;
     background-color: $light-gray;
   }
+}
+
+
+
+//mobile application buttons - google & apple
+.lh-35 {
+  height: 35px;
+}
+
+.mg-width {
+  width: 114px;
+}
+
+.ma-width {
+  width: 118px;
 }

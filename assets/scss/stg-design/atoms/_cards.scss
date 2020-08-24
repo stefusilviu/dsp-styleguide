@@ -4,6 +4,10 @@
   box-shadow: $small-shadow;
   background: $white;
 
+  .title {
+    line-height: 20px;
+  }
+
   &.impact {
     background-color: $dark-gray;
     * {
