@@ -5288,6 +5288,9 @@ summary,
 .bold {
   font-weight: 600; }
 
+.enhanced {
+  font-weight: 600; }
+
 .underline {
   text-decoration: underline; }
 
@@ -5315,6 +5318,26 @@ summary,
 .hidden,
 [hidden] {
   display: none; }
+
+@media (min-width: 1200px) {
+  .visible-lg-inline-block {
+    display: inline-block !important; } }
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; } }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important; } }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important; } }
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important; } }
 
 .m-0 {
   margin: 0px !important; }
@@ -7858,6 +7881,11 @@ summary,
   .nm-md {
     margin-left: -15px !important;
     margin-right: -15px !important; } }
+
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
 
 .list-unstyled {
   margin: 0 !important; }
