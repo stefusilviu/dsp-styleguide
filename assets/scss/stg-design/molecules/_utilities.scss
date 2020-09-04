@@ -1,6 +1,9 @@
 summary,
 .summary {
   font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+  &.enhanced {
+    font-weight: 600;
+  }
 }
 
 .small {
@@ -8,7 +11,11 @@ summary,
 }
 
 .caps {
-  text-transform: uppercase;
+  text-transform: uppercase !important;
+}
+
+.lowercase {
+  text-transform: lowercase !important;
 }
 
 .sans {
@@ -24,10 +31,6 @@ summary,
 }
 
 .bold {
-  font-weight: 600;
-}
-
-.enhanced {
   font-weight: 600;
 }
 

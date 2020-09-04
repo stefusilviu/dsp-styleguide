@@ -4740,6 +4740,8 @@ button, a.button {
     .card.mobile-full-width {
       margin-left: -15px;
       margin-right: -15px; } }
+  .card.swg-card h1 {
+    font-weight: 500; }
 
 p {
   font-size: 14px;
@@ -4872,6 +4874,11 @@ h6 {
       vertical-align: sub; }
   label.control-label {
     font-size: 12px; } }
+
+.subscriber-only-icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 auto 15px; }
 
 .form-control {
   height: 40px;
@@ -5269,12 +5276,18 @@ h6 {
 summary,
 .summary {
   font: 400 14px/1.5em "McClatchy Sans", sans-serif; }
+  summary.enhanced,
+  .summary.enhanced {
+    font-weight: 600; }
 
 .small {
   font: 400 11px/1.5em "McClatchy Sans", sans-serif; }
 
 .caps {
-  text-transform: uppercase; }
+  text-transform: uppercase !important; }
+
+.lowercase {
+  text-transform: lowercase !important; }
 
 .sans {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif; }
@@ -5286,9 +5299,6 @@ summary,
   font-weight: 400; }
 
 .bold {
-  font-weight: 600; }
-
-.enhanced {
   font-weight: 600; }
 
 .underline {
