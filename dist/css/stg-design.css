@@ -4690,6 +4690,15 @@ button, a.button {
   .swg-button:active {
     background-color: #fff; }
 
+.lh-35 {
+  height: 35px; }
+
+.mg-width {
+  width: 114px; }
+
+.ma-width {
+  width: 118px; }
+
 .more-link {
   color: #989898;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -4742,6 +4751,8 @@ button, a.button {
       margin-right: -15px; } }
   .card.swg-card h1 {
     font-weight: 500; }
+  .card.swg-card p.small {
+    font-size: 13px; }
 
 p {
   font-size: 14px;
@@ -5282,6 +5293,9 @@ summary,
 
 .small {
   font: 400 11px/1.5em "McClatchy Sans", sans-serif; }
+
+.sub-text {
+  font-size: 13px; }
 
 .caps {
   text-transform: uppercase !important; }
