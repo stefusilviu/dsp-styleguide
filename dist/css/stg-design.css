@@ -8019,26 +8019,28 @@ summary,
   z-index: 999; }
 
 #masthead {
+  background-color: #fff;
   height: auto;
   overflow: hidden;
   margin: 0; }
   #masthead .logo {
-    background-color: #fff;
     position: relative;
-    padding: 15px 0;
-    margin: 0; }
+    padding: 12px 0 12px;
+    margin: 0;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13); }
     #masthead .logo a {
       display: block; }
     #masthead .logo img {
       display: block;
+      height: 40px;
       max-width: 100%;
-      height: 30px;
+      min-height: 27px;
+      max-height: 40px;
       width: auto;
       margin: 0 auto;
       padding: 0 20px; }
-      @media (min-width: 1200px) {
-        #masthead .logo img {
-          height: 38px !important; } }
+    #masthead .logo.no-shadow {
+      box-shadow: none; }
   @media (min-width: 1200px) {
     #masthead .logo a {
       text-align: left; } }
@@ -8053,51 +8055,49 @@ summary,
   float: none;
   display: block;
   text-align: center;
-  line-height: 18px;
+  background-color: #F6F6F6;
+  border-bottom: 1px solid #ebebeb;
+  line-height: 40px;
   margin: 0;
-  padding: 10px 0;
-  width: 100%;
-  border-bottom: 1px solid #ebebeb; }
+  padding: 0; }
   .masthead-links li {
     text-transform: uppercase;
+    font-size: 14px;
     font-weight: 600;
     display: inline-block;
     margin-right: 5px;
-    color: #707070;
-    height: 18px; }
-    .masthead-links li a, .masthead-links li a:after {
-      font-size: 11px;
-      color: #707070; }
-    .masthead-links li ul {
-      margin: 0; }
+    color: #707070; }
     .masthead-links li:last-child {
       margin-right: 0; }
     .masthead-links li:not(:last-child):after {
       content: "|";
-      color: #707070;
       margin-left: 8px;
-      font-size: 11px; }
+      font-size: 15px; }
+    .masthead-links li a {
+      color: #707070; }
+      .masthead-links li a:hover {
+        color: #707070; }
 
 @media (min-width: 1200px) {
   #masthead {
-    height: 64px; }
+    height: 64px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13); }
     #masthead .logo {
-      padding: 13px 0;
+      padding: 0;
+      box-shadow: none;
+      margin: 12px 0 0;
       text-align: initial; }
   .masthead-container {
     margin: 0 auto; }
   .masthead-links {
+    float: right;
     list-style: none;
-    position: absolute;
-    top: 0;
+    position: relative;
+    right: 25px;
+    bottom: 34px;
     background: none;
     border: none;
-    padding: 0;
-    margin: 23px 50px 23px 0;
-    width: auto; }
-    .masthead-links li a, .masthead-links li:not(:last-child),
-    .masthead-links li a:after, .masthead-links li:not(:last-child):after {
-      font-size: 14px; } }
+    line-height: 34px; } }
 
 @media (max-width: 1200px) {
   .masthead-container {
