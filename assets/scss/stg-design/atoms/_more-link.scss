@@ -5,6 +5,11 @@
   font-weight: 600;
   line-height: 18px;
   text-transform: uppercase;
+  //center arrow when not uppercase
+  &.ttn:after{
+    position: relative;
+    top: 2px;
+  }
 
   &:after {
     content: "\f30b";
