@@ -4699,7 +4699,7 @@ button, a.button {
   width: 118px; }
 
 .more-link {
-  color: #989898;
+  color: #707070;
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -4754,7 +4754,8 @@ button, a.button {
   .card.swg-card h1 {
     font-weight: 500; }
   .card.swg-card p.small {
-    font-size: 13px; }
+    font-size: 13px;
+    line-height: 17px; }
 
 @media (min-width: 768px) {
   .h-md-100 {
@@ -4881,7 +4882,7 @@ h6 {
 
 .byline {
   font-family: "McClatchy Sans", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  color: #989898;
+  color: #707070;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 0.786em; }
@@ -4995,6 +4996,24 @@ h6 {
     background-image: url(/img/cc-amex.png); }
   .cc-type.discover {
     background-image: url(/img/cc-discover.png); }
+
+.cc-icon:before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  font-size: 16px; }
+
+.cc-visa:before {
+  color: #1A1F71;
+  content: "\f1f0"; }
+
+.cc-mastercard:before {
+  content: "\f1f1"; }
+
+.cc-amex:before {
+  content: "\f1f3"; }
+
+.cc-discover:before {
+  content: "\f1f2"; }
 
 .custom-control input[type="checkbox"]:focus + .custom-control-label:before,
 .custom-control input[type="radio"]:focus + .custom-control-label:before {
@@ -7949,6 +7968,12 @@ summary,
   max-width: -moz-fit-content;
   max-width: fit-content; }
 
+@media (max-width: 574px) {
+  .nm-l {
+    margin-left: -15px !important; }
+  .nm-r {
+    margin-right: -15px !important; } }
+
 .sub-nav a {
   color: #707070;
   font-weight: 400;
@@ -7959,9 +7984,6 @@ summary,
   .sub-nav a.active {
     font-weight: 700;
     color: #222; }
-
-.sub-nav.white li {
-  padding-right: 0; }
 
 .sub-nav.white a {
   display: block;
@@ -8132,6 +8154,12 @@ summary,
 @media (max-width: 1200px) {
   .masthead-container {
     width: auto; } }
+
+@media (max-width: 479px) {
+  .masthead-links li {
+    font-size: 11px; }
+    .masthead-links li a {
+      font-size: 11px; } }
 
 .footer {
   position: absolute;
