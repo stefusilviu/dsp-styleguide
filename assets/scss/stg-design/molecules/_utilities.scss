@@ -216,3 +216,12 @@ $breakpoints: "sm" "md" "lg" "xl";
 .fit-content {
   max-width: fit-content;
 }
+
+@media (max-width: 574px) {
+  .nm-l {
+    margin-left: -15px !important;
+  }
+  .nm-r {
+    margin-right: -15px !important;
+  }
+}

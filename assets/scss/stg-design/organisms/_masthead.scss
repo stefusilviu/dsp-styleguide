@@ -123,3 +123,14 @@
     width: auto;
   }
 }
+
+@media (max-width: 479px) {
+    .masthead-links {
+        li {
+            font-size: 11px;
+            a {
+                font-size: 11px;
+            }
+        }
+    }
+}
