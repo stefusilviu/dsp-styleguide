@@ -4714,8 +4714,7 @@ button, a.button {
     line-height: normal;
     font-size: 16px;
     margin-left: 4px;
-    transition: transform .6s ease;
-    vertical-align: middle; }
+    transition: transform .6s ease; }
   .more-link:hover {
     text-decoration: none;
     color: #31409f; }
@@ -8074,12 +8073,12 @@ summary,
   background-color: #fff;
   height: auto;
   overflow: hidden;
-  margin: 0; }
+  margin: 0;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13); }
   #masthead .logo {
     position: relative;
-    padding: 12px 0 12px;
-    margin: 0;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13); }
+    padding-top: 12px;
+    margin: 0; }
     #masthead .logo a {
       display: block; }
     #masthead .logo img {
@@ -8107,11 +8106,9 @@ summary,
   float: none;
   display: block;
   text-align: center;
-  background-color: #F6F6F6;
-  border-bottom: 1px solid #ebebeb;
-  line-height: 40px;
+  line-height: 18px;
   margin: 0;
-  padding: 0; }
+  padding: 10px 0 15px; }
   .masthead-links li {
     text-transform: uppercase;
     font-size: 14px;
@@ -8124,7 +8121,7 @@ summary,
     .masthead-links li:not(:last-child):after {
       content: "|";
       margin-left: 8px;
-      font-size: 15px; }
+      font-size: 11px; }
     .masthead-links li a {
       color: #707070; }
       .masthead-links li a:hover {
@@ -8132,8 +8129,7 @@ summary,
 
 @media (min-width: 1200px) {
   #masthead {
-    height: 64px;
-    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.13); }
+    height: 64px; }
     #masthead .logo {
       padding: 0;
       box-shadow: none;
@@ -8147,9 +8143,11 @@ summary,
     position: relative;
     right: 25px;
     bottom: 34px;
-    background: none;
     border: none;
-    line-height: 34px; } }
+    line-height: 34px; }
+    .masthead-links li a, .masthead-links li:not(:last-child),
+    .masthead-links li a:after, .masthead-links li:not(:last-child):after {
+      font-size: 14px; } }
 
 @media (max-width: 1200px) {
   .masthead-container {
@@ -8343,6 +8341,14 @@ summary,
   @media (min-width: 1200px) {
     .error-page-content {
       padding-top: 150px; } }
+
+.offer-error {
+  max-width: 680px;
+  display: inline-block; }
+
+.redeem-offer-graphic {
+  width: 100%;
+  max-width: 260px; }
 
 /* Text Color */
 .black {
