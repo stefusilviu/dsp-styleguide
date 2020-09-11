@@ -36,7 +36,7 @@
     }
   }
   .mpp-subscription {
-    & .card .primary {
+    &.card.primary {
       padding: 25px 15px;
     }
     & a.button {
@@ -47,7 +47,7 @@
       line-height: 1.2;
     }
     @media(min-width: 768px) {
-      .card .primary {
+      &.card.primary {
         padding: 50px 30px;
       }
       .primary-headline {

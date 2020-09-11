@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -5312,6 +5313,21 @@ h6 {
   .stg-modal-content-buttons button.text {
     color: #fff; }
 
+.list {
+  margin: 0;
+  padding: 0; }
+  .list li {
+    list-style-type: none;
+    padding-left: 38px;
+    position: relative;
+    margin-bottom: 5px; }
+    .list li:before {
+      content: '•';
+      position: absolute;
+      left: 14px; }
+    .list li:last-child {
+      margin-bottom: 0; }
+
 summary,
 .summary {
   font: 400 14px/1.5em "McClatchy Sans", sans-serif; }
@@ -8196,7 +8212,7 @@ summary,
 .subscribe-offer .col-md-6:last-child .card.secondary {
   margin-bottom: 0; }
 
-.subscribe-offer .mpp-subscription .card .primary {
+.subscribe-offer .mpp-subscription.card.primary {
   padding: 25px 15px; }
 
 .subscribe-offer .mpp-subscription a.button {
@@ -8207,7 +8223,7 @@ summary,
   line-height: 1.2; }
 
 @media (min-width: 768px) {
-  .subscribe-offer .mpp-subscription .card .primary {
+  .subscribe-offer .mpp-subscription.card.primary {
     padding: 50px 30px; }
   .subscribe-offer .mpp-subscription .primary-headline {
     font-size: 52px; } }
