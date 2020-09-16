@@ -4,6 +4,10 @@
   box-shadow: $small-shadow;
   background: $white;
 
+  .title {
+    line-height: 20px;
+  }
+
   &.impact {
     background-color: $dark-gray;
     * {
@@ -24,5 +28,26 @@
       margin-left: -15px;
       margin-right: -15px;
     }
+  }
+  &.swg-card {
+    h1 {
+      font-weight: 500;
+    }
+    p.small {
+      font-size: 13px;
+      line-height: 17px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .h-md-100 {
+    height: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .h-lg-100 {
+    height: 100%;
   }
 }
