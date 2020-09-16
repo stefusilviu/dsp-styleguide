@@ -3,19 +3,21 @@
   font-family: $ff-sans;
   font-size: $fz-more-link;
   font-weight: 600;
+  line-height: 18px;
   text-transform: uppercase;
+  //center arrow when not uppercase
+  &.ttn:after{
+    position: relative;
+    top: 2px;
+  }
 
   &:after {
     content: "\f30b";
     font-family: $font-awesome;
+    line-height: normal;
     font-size: 16px;
-    margin-left: 5px;
+    margin-left: 4px;
     transition: transform .6s ease;
-    vertical-align: middle;
-
-    // Fix for aligning the arrow with uncentered font
-    position: relative;
-    top: -2px;
   }
 
   &:hover {
@@ -39,6 +41,9 @@
 
   &.white {
     color: $white;
+  }
+  &.black {
+    color: $black;
   }
 
   &.ttn {

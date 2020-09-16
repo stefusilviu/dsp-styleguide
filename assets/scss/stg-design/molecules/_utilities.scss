@@ -1,58 +1,111 @@
 summary,
 .summary {
-    font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+  font: 400 14px/1.5em "McClatchy Sans", sans-serif;
+  &.enhanced {
+    font-weight: 600;
+  }
 }
 
 .small {
-    font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+  font: 400 11px/1.5em "McClatchy Sans", sans-serif;
+}
+
+.sub-text {
+  font-size: 13px;
 }
 
 .caps {
-    text-transform: uppercase;
+  text-transform: uppercase !important;
+}
+
+.lowercase {
+  text-transform: lowercase !important;
 }
 
 .sans {
-    font-family: $ff-sans;
+  font-family: $ff-sans;
 }
 
 .serif {
-    font-family: $ff-serif;
+  font-family: $ff-serif;
 }
 
 .soft {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .bold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .underline {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .text-capitalize-first {
-    // can be used only on <p> element
-    &::first-letter {
-        text-transform: uppercase;
-    }
+  // can be used only on <p> element
+  &::first-letter {
+    text-transform: uppercase;
+  }
 }
 
 .no-shadow {
-    box-shadow: none;
+  box-shadow: none;
+}
+
+.small-shadow {
+  box-shadow: $small-shadow;
+}
+
+.medium-shadow {
+  box-shadow: $med-shadow;
 }
 
 .big-shadow {
-    box-shadow: $big-shadow;
+  box-shadow: $big-shadow;
+}
+
+.header-shadow {
+  box-shadow: $header-shadow;
 }
 
 .relative {
-    position: relative;
+  position: relative;
 }
 
 .hidden,
 [hidden] {
-    display: none;
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .visible-lg-inline-block {
+    display: inline-block !important
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-sm {
+    display: none !important
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-md {
+    display: none !important
+  }
+}
+
+@media (min-width: 1200px) {
+  .hidden-lg {
+    display: none !important
+  }
 }
 
 // Generate spacing utilities
@@ -62,67 +115,106 @@ $breakpoints: "sm" "md" "lg" "xl";
 
 @each $space in $spaces {
 
-    .m-#{$space} {
-        margin: #{$space}px !important;
-    }
+  .m-#{$space} {
+    margin: #{$space}px !important;
+  }
 
-    @each $sideAbr, $sideName in $sides {
-        .m#{$sideAbr}-#{$space} {
-            margin-#{$sideName}: #{$space}px !important;
+  @each $sideAbr, $sideName in $sides {
+    .m#{$sideAbr}-#{$space} {
+      margin-#{$sideName}: #{$space}px !important;
+    }
+  }
+
+  @each $sideAbr, $sideName in $sides {
+    @each $breakpoint in $breakpoints {
+      .m#{$sideAbr}-#{$breakpoint}-#{$space} {
+        @include media-breakpoint-up(#{$breakpoint}) {
+          margin-#{$sideName}: #{$space}px !important;
         }
+      }
     }
+  }
 
-    @each $sideAbr, $sideName in $sides {
-        @each $breakpoint in $breakpoints {
-            .m#{$sideAbr}-#{$breakpoint}-#{$space} {
-                @include media-breakpoint-up(#{$breakpoint}) {
-                    margin-#{$sideName}: #{$space}px !important;
-                }
-            }
+  .p-#{$space} {
+    padding: #{$space}px !important;
+  }
+
+  @each $sideAbr, $sideName in $sides {
+    .p#{$sideAbr}-#{$space} {
+      padding-#{$sideName}: #{$space}px !important;
+    }
+  }
+
+  @each $sideAbr, $sideName in $sides {
+    @each $breakpoint in $breakpoints {
+      .p#{$sideAbr}-#{$breakpoint}-#{$space} {
+        @include media-breakpoint-up(#{$breakpoint}) {
+          padding-#{$sideName}: #{$space}px !important;
         }
+      }
     }
-
-    .p-#{$space} {
-        padding: #{$space}px !important;
-    }
-
-    @each $sideAbr, $sideName in $sides {
-        .p#{$sideAbr}-#{$space} {
-            padding-#{$sideName}: #{$space}px !important;
-        }
-    }
-
-    @each $sideAbr, $sideName in $sides {
-        @each $breakpoint in $breakpoints {
-            .p#{$sideAbr}-#{$breakpoint}-#{$space} {
-                @include media-breakpoint-up(#{$breakpoint}) {
-                    padding-#{$sideName}: #{$space}px !important;
-                }
-            }
-        }
-    }
+  }
 }
 
 // Negative margins
 @media (max-width: 479px) {
-    .nm-xs {
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-    }
+  .nm-xs {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
 }
 
 @media (max-width: 767px) {
-    .nm-sm {
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-    }
+  .nm-sm {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
 }
 
 @media (max-width: 991px) {
-    .nm-md {
-        margin-left: -15px !important;
-        margin-right: -15px !important;
-    }
+  .nm-md {
+    margin-left: -15px !important;
+    margin-right: -15px !important;
+  }
+}
+
+.responsive-img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+//list of errors
+.list-unstyled {
+  margin: 0 !important;
+}
+
+.promotion-logo {
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 50px;
+}
+
+.promotion-background {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.grey-background {
+  background-color: $pearl;
+  position: relative;
+  z-index: 1;
+}
+
+.gradient-overlay {
+  position: relative
+}
+
+.fit-content {
+  max-width: fit-content;
 }
 
 @media (max-width: 574px) {
