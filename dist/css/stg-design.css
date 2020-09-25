@@ -4952,7 +4952,7 @@ h6 {
     border-color: #D63031;
     box-shadow: 0 0 4px 2px rgba(214, 48, 49, 0.75); }
 
-.password-switch {
+.password-switch, .password-or-text {
   position: absolute;
   top: 0;
   right: 0;
@@ -4960,7 +4960,7 @@ h6 {
   width: 15px;
   cursor: pointer;
   font-size: 12px; }
-  .password-switch:after {
+  .password-switch:after, .password-or-text:after {
     content: '\f070';
     font-family: "Font Awesome 5 Free";
     position: absolute;
@@ -4970,7 +4970,7 @@ h6 {
     width: 15px;
     text-align: right;
     color: #222; }
-  .password-switch.visible:after {
+  .password-switch.visible:after, .password-or-text.visible:after {
     content: '\f06e'; }
 
 .cc-input {
@@ -5183,6 +5183,15 @@ h6 {
 .slide-in-down {
   -webkit-animation-name: slideInDown;
           animation-name: slideInDown; }
+
+.collapse:not(.show) {
+  display: none; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease; }
 
 .spinner {
   position: absolute;
