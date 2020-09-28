@@ -4657,7 +4657,7 @@ button, a.button {
     pointer-events: none;
     background-color: #989898; }
 
-.swg-button {
+.stg-design .swg-button {
   border: 0;
   border-radius: 4px;
   box-sizing: border-box;
@@ -4669,7 +4669,7 @@ button, a.button {
   min-height: 40px;
   background-color: #fff;
   box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
-  .swg-button:after {
+  .stg-design .swg-button:after {
     display: block;
     max-width: 200px;
     max-height: 40px;
@@ -4683,11 +4683,11 @@ button, a.button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
-  .swg-button:hover {
+  .stg-design .swg-button:hover {
     background-color: #f8f8f8; }
-  .swg-button:focus {
+  .stg-design .swg-button:focus {
     background-color: #e8e8e8; }
-  .swg-button:active {
+  .stg-design .swg-button:active {
     background-color: #fff; }
 
 .lh-35 {
@@ -4752,10 +4752,12 @@ button, a.button {
       margin-left: -15px;
       margin-right: -15px; } }
   .card.swg-card h1 {
-    font-weight: 500; }
+    font-weight: 400; }
   .card.swg-card p.small {
     font-size: 13px;
     line-height: 17px; }
+  .card.swg-card a {
+    font-weight: 400; }
 
 @media (min-width: 768px) {
   .h-md-100 {
@@ -8190,6 +8192,9 @@ summary,
   width: 100%;
   box-shadow: 0 0 3px 0 rgba(103, 103, 103, 0.5);
   padding: 15px 0; }
+
+.g-recaptcha > div {
+  z-index: 10; }
 
 .redeem-form fieldset {
   display: block;
