@@ -8141,8 +8141,13 @@ summary,
       font-size: 15px; }
     .masthead-links li a {
       color: #707070; }
+      .masthead-links li a:after {
+        font-size: 11px; }
       .masthead-links li a:hover {
         color: #707070; }
+    @media (min-width: 479px) {
+      .masthead-links li a:after {
+        font-size: 14px; } }
 
 @media (min-width: 1200px) {
   #masthead {
