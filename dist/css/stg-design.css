@@ -4831,7 +4831,8 @@ h6 {
 .secondary-headline {
   font-family: "McClatchy Serif", Georgia, Times, "Times New Roman", serif;
   font-size: 18px;
-  line-height: 21px; }
+  line-height: 21px;
+  font-weight: 400; }
   .secondary-headline.niche {
     font-size: 19px;
     line-height: 28px; }
@@ -4903,6 +4904,11 @@ h6 {
   width: 32px;
   height: 32px;
   margin: 0 auto 15px; }
+  @media (min-width: 768px) {
+    .subscriber-only-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 15px; } }
 
 .form-control {
   height: 40px;
@@ -8225,6 +8231,22 @@ summary,
   display: block;
   opacity: 1; }
 
+@media (min-width: 576px) {
+  .subscribe-offer .container {
+    max-width: 480px; } }
+
+@media (min-width: 768px) {
+  .subscribe-offer .container {
+    max-width: 480px; } }
+
+@media (min-width: 992px) {
+  .subscribe-offer .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .subscribe-offer .container {
+    max-width: 1140px; } }
+
 .subscribe-offer p:not(.summary) {
   margin-bottom: 15px; }
 
@@ -8381,6 +8403,19 @@ summary,
 .redeem-offer-graphic {
   width: 100%;
   max-width: 260px; }
+
+@media screen and (min-width: 991px) {
+  .affinity-paywall-stop-offer .card.big-shadow {
+    padding-top: 0; }
+    .affinity-paywall-stop-offer .card.big-shadow .content-affinity-img {
+      margin-left: -15px;
+      margin-right: -15px; }
+      .affinity-paywall-stop-offer .card.big-shadow .content-affinity-img .p-l-15 {
+        padding-left: 0; }
+      .affinity-paywall-stop-offer .card.big-shadow .content-affinity-img .p-r-15 {
+        padding-right: 0; }
+    .affinity-paywall-stop-offer .card.big-shadow .primary-sub {
+      padding-top: 30px; } }
 
 /* Text Color */
 .black {
