@@ -33,10 +33,7 @@ function initPasswordSwitch(element) {
 }
 
 (function () {
-    //'[data-toggle="password-or-text"]'
-    //this._triggerArray = [].slice.call(document.querySelectorAll("input[data-toggle=\"password-or-text\"]"));
     var toggleList = document.querySelectorAll('input[data-toggle="password-or-text"]');
-
     for (var i = 0; i < toggleList.length; i++) {
         (function () {
             var passChangeElement = document.createElement("p");
@@ -45,10 +42,10 @@ function initPasswordSwitch(element) {
             passChangeElement.addEventListener('click', function (event) {
                 if (targetElement.getAttribute("type") === "password") {
                     targetElement.setAttribute("type", "text");
-                    targetElement.classList.add("visible");
+                    passChangeElement.classList.add("visible");
                 } else {
                     targetElement.setAttribute("type", "password");
-                    targetElement.classList.remove("visible");
+                    passChangeElement.classList.remove("visible");
                 }
             });
             targetElement.parentNode.append(passChangeElement);
