@@ -1,9 +1,4 @@
 .redeem-form {
-  fieldset {
-    display: block;
-    width: calc(100% - 122px);
-    float: left;
-  }
   button {
     padding: 5px 14px;
   }
@@ -174,13 +169,6 @@
         .card {
           flex-grow: 1;
           margin-bottom: 50px;
-        }
-        .combo-subscription {
-          .more-link {
-            &.blue {
-              color: $med-gray;
-            }
-          }
         }
       }
     }
