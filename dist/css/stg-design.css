@@ -8231,6 +8231,15 @@ summary,
   display: block;
   opacity: 1; }
 
+.redeem-extra .redeem-form .form-field-wrapper input[type=text] {
+  width: 100%;
+  max-width: 345px;
+  padding: 10px;
+  border: 1px solid #989898;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #707070; }
+
 @media (min-width: 576px) {
   .subscribe-offer .container {
     max-width: 480px; } }

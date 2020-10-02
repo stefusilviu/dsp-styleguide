@@ -20,6 +20,15 @@
       opacity: 1;
     }
   }
+  .redeem-form .form-field-wrapper input[type=text] {
+    width: 100%;
+    max-width: 345px;
+    padding: 10px;
+    border: 1px solid #989898;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #707070;
+  }
 }
 
 .subscribe-offer {
