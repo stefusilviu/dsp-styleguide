@@ -77,10 +77,19 @@
     }
 
     a {
+      &:after {
+        font-size: 11px;
+      }
+
       color: $med-gray;
 
       &:hover {
         color: $med-gray;
+      }
+    }
+    @media (min-width: 479px){
+      a:after{
+        font-size: 14px;
       }
     }
   }

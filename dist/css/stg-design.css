@@ -4657,7 +4657,7 @@ button, a.button {
     pointer-events: none;
     background-color: #989898; }
 
-.swg-button {
+.stg-design .swg-button {
   border: 0;
   border-radius: 4px;
   box-sizing: border-box;
@@ -4669,7 +4669,7 @@ button, a.button {
   min-height: 40px;
   background-color: #fff;
   box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15); }
-  .swg-button:after {
+  .stg-design .swg-button:after {
     display: block;
     max-width: 200px;
     max-height: 40px;
@@ -4683,11 +4683,11 @@ button, a.button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
-  .swg-button:hover {
+  .stg-design .swg-button:hover {
     background-color: #f8f8f8; }
-  .swg-button:focus {
+  .stg-design .swg-button:focus {
     background-color: #e8e8e8; }
-  .swg-button:active {
+  .stg-design .swg-button:active {
     background-color: #fff; }
 
 .lh-35 {
@@ -4752,10 +4752,12 @@ button, a.button {
       margin-left: -15px;
       margin-right: -15px; } }
   .card.swg-card h1 {
-    font-weight: 500; }
+    font-weight: 400; }
   .card.swg-card p.small {
     font-size: 13px;
     line-height: 17px; }
+  .card.swg-card a {
+    font-weight: 400; }
 
 @media (min-width: 768px) {
   .h-md-100 {
@@ -4829,7 +4831,8 @@ h6 {
 .secondary-headline {
   font-family: "McClatchy Serif", Georgia, Times, "Times New Roman", serif;
   font-size: 18px;
-  line-height: 21px; }
+  line-height: 21px;
+  font-weight: 400; }
   .secondary-headline.niche {
     font-size: 19px;
     line-height: 28px; }
@@ -4901,6 +4904,11 @@ h6 {
   width: 32px;
   height: 32px;
   margin: 0 auto 15px; }
+  @media (min-width: 768px) {
+    .subscriber-only-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 auto 15px; } }
 
 .form-control {
   height: 40px;
@@ -8148,8 +8156,13 @@ summary,
       font-size: 15px; }
     .masthead-links li a {
       color: #707070; }
+      .masthead-links li a:after {
+        font-size: 11px; }
       .masthead-links li a:hover {
         color: #707070; }
+    @media (min-width: 479px) {
+      .masthead-links li a:after {
+        font-size: 14px; } }
 
 @media (min-width: 1200px) {
   #masthead {
@@ -8200,6 +8213,9 @@ summary,
   box-shadow: 0 0 3px 0 rgba(103, 103, 103, 0.5);
   padding: 15px 0; }
 
+.g-recaptcha > div {
+  z-index: 10; }
+
 .redeem-form fieldset {
   display: block;
   width: calc(100% - 122px);
@@ -8214,6 +8230,31 @@ summary,
 .redeem-extra .loading-button .loading-container {
   display: block;
   opacity: 1; }
+
+.redeem-extra .redeem-form .form-field-wrapper input[type=text] {
+  width: 100%;
+  max-width: 345px;
+  padding: 10px;
+  border: 1px solid #989898;
+  border-radius: 2px;
+  background-color: #fff;
+  color: #707070; }
+
+@media (min-width: 576px) {
+  .subscribe-offer .container {
+    max-width: 480px; } }
+
+@media (min-width: 768px) {
+  .subscribe-offer .container {
+    max-width: 480px; } }
+
+@media (min-width: 992px) {
+  .subscribe-offer .container {
+    max-width: 960px; } }
+
+@media (min-width: 1200px) {
+  .subscribe-offer .container {
+    max-width: 1140px; } }
 
 .subscribe-offer p:not(.summary) {
   margin-bottom: 15px; }
@@ -8371,6 +8412,19 @@ summary,
 .redeem-offer-graphic {
   width: 100%;
   max-width: 260px; }
+
+@media screen and (min-width: 991px) {
+  .affinity-paywall-stop-offer .card.big-shadow {
+    padding-top: 0; }
+    .affinity-paywall-stop-offer .card.big-shadow .content-affinity-img {
+      margin-left: -15px;
+      margin-right: -15px; }
+      .affinity-paywall-stop-offer .card.big-shadow .content-affinity-img .p-l-15 {
+        padding-left: 0; }
+      .affinity-paywall-stop-offer .card.big-shadow .content-affinity-img .p-r-15 {
+        padding-right: 0; }
+    .affinity-paywall-stop-offer .card.big-shadow .primary-sub {
+      padding-top: 30px; } }
 
 /* Text Color */
 .black {
