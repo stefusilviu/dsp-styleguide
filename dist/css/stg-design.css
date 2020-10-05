@@ -8216,11 +8216,6 @@ summary,
 .g-recaptcha > div {
   z-index: 10; }
 
-.redeem-form fieldset {
-  display: block;
-  width: calc(100% - 122px);
-  float: left; }
-
 .redeem-form button {
   padding: 5px 14px; }
 
@@ -8350,9 +8345,7 @@ summary,
       display: inherit; }
       .subscribe-offer .more-subscriptions > [class*='col-'] .card {
         flex-grow: 1;
-        margin-bottom: 50px; }
-      .subscribe-offer .more-subscriptions > [class*='col-'] .combo-subscription .more-link.blue {
-        color: #707070; } }
+        margin-bottom: 50px; } }
 
 .error-page {
   background: #dedede;
