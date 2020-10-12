@@ -1,9 +1,4 @@
 .redeem-form {
-  fieldset {
-    display: block;
-    width: calc(100% - 122px);
-    float: left;
-  }
   button {
     padding: 5px 14px;
   }
@@ -20,9 +15,32 @@
       opacity: 1;
     }
   }
+  .redeem-form .form-field-wrapper input[type=text] {
+    width: 100%;
+    max-width: 345px;
+    padding: 10px;
+    border: 1px solid #989898;
+    border-radius: 2px;
+    background-color: #fff;
+    color: #707070;
+  }
 }
 
 .subscribe-offer {
+  .container {
+    @media(min-width: 576px) {
+      max-width: 480px;
+    }
+    @media(min-width: 768px) {
+      max-width: 480px;
+    }
+    @media(min-width: 992px) {
+      max-width: 960px;
+    }
+    @media(min-width: 1200px) {
+      max-width: 1140px;
+    }
+  }
   p:not(.summary) {
     margin-bottom: 15px;
   }
@@ -151,13 +169,6 @@
         .card {
           flex-grow: 1;
           margin-bottom: 50px;
-        }
-        .combo-subscription {
-          .more-link {
-            &.blue {
-              color: $med-gray;
-            }
-          }
         }
       }
     }

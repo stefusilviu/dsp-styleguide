@@ -20,3 +20,7 @@
   box-shadow: 0 0 3px 0 rgba(103, 103, 103, 0.5);
   padding: 15px 0;
 }
+
+.g-recaptcha>div {
+  z-index: 10
+}
