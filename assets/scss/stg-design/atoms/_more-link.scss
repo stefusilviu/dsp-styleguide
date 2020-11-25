@@ -11,6 +11,10 @@
     top: 2px;
   }
 
+  @media (max-width: 760px) {
+    display: block;
+  }
+
   &:after {
     content: "\f30b";
     font-family: $font-awesome;
