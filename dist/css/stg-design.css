@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*!
- * Bootstrap Reboot v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Bootstrap Reboot v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
 *,
@@ -111,10 +111,10 @@ a {
     color: #0056b3;
     text-decoration: underline; }
 
-a:not([href]):not([class]) {
+a:not([href]) {
   color: inherit;
   text-decoration: none; }
-  a:not([href]):not([class]):hover {
+  a:not([href]):hover {
     color: inherit;
     text-decoration: none; }
 
@@ -128,8 +128,7 @@ samp {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto;
-  -ms-overflow-style: scrollbar; }
+  overflow: auto; }
 
 figure {
   margin: 0 0 1rem; }
@@ -153,8 +152,7 @@ caption {
   caption-side: bottom; }
 
 th {
-  text-align: inherit;
-  text-align: -webkit-match-parent; }
+  text-align: inherit; }
 
 label {
   display: inline-block;
@@ -185,9 +183,6 @@ button,
 select {
   text-transform: none; }
 
-[role="button"] {
-  cursor: pointer; }
-
 select {
   word-wrap: normal; }
 
@@ -214,6 +209,12 @@ input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box;
   padding: 0; }
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox; }
 
 textarea {
   overflow: auto;
@@ -268,10 +269,10 @@ template {
   display: none !important; }
 
 /*!
- * Bootstrap Grid v4.5.3 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ * Bootstrap Grid v4.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 The Bootstrap Authors
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 html {
   box-sizing: border-box;
@@ -282,12 +283,26 @@ html {
 *::after {
   box-sizing: inherit; }
 
-.container,
-.container-fluid,
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl {
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 576px) {
+    .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px; } }
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -2863,10 +2878,16 @@ html {
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
+  .form-control::-webkit-input-placeholder {
+    color: #6c757d;
+    opacity: 1; }
   .form-control::-moz-placeholder {
     color: #6c757d;
     opacity: 1; }
   .form-control:-ms-input-placeholder {
+    color: #6c757d;
+    opacity: 1; }
+  .form-control::-ms-input-placeholder {
     color: #6c757d;
     opacity: 1; }
   .form-control::placeholder {
@@ -2875,14 +2896,6 @@ html {
   .form-control:disabled, .form-control[readonly] {
     background-color: #e9ecef;
     opacity: 1; }
-
-input[type="date"].form-control,
-input[type="time"].form-control,
-input[type="datetime-local"].form-control,
-input[type="month"].form-control {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
 
 select.form-control:focus::-ms-value {
   color: #495057;
@@ -3001,7 +3014,6 @@ textarea.form-control {
 .valid-tooltip {
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: 5;
   display: none;
   max-width: 100%;
@@ -3082,7 +3094,6 @@ textarea.form-control {
 .invalid-tooltip {
   position: absolute;
   top: 100%;
-  left: 0;
   z-index: 5;
   display: none;
   max-width: 100%;
@@ -3411,8 +3422,7 @@ textarea.form-control {
   .input-group > .custom-select,
   .input-group > .custom-file {
     position: relative;
-    flex: 1 1 auto;
-    width: 1%;
+    flex: 1 1 0%;
     min-width: 0;
     margin-bottom: 0; }
     .input-group > .form-control + .form-control,
@@ -3551,12 +3561,9 @@ textarea.form-control {
 
 .custom-control {
   position: relative;
-  z-index: 1;
   display: block;
   min-height: 1.5rem;
-  padding-left: 1.5rem;
-  -webkit-print-color-adjust: exact;
-          color-adjust: exact; }
+  padding-left: 1.5rem; }
 
 .custom-control-inline {
   display: inline-flex;
@@ -4030,12 +4037,10 @@ mark,
   color: #fff;
   background-color: #007bff; }
 
-.nav-fill > .nav-link,
 .nav-fill .nav-item {
   flex: 1 1 auto;
   text-align: center; }
 
-.nav-justified > .nav-link,
 .nav-justified .nav-item {
   flex-basis: 0;
   flex-grow: 1;
@@ -4122,9 +4127,6 @@ mark,
   .modal-dialog-centered::before {
     display: block;
     height: calc(100vh - 1rem);
-    height: -webkit-min-content;
-    height: -moz-min-content;
-    height: min-content;
     content: ""; }
   .modal-dialog-centered.modal-dialog-scrollable {
     flex-direction: column;
@@ -4211,10 +4213,7 @@ mark,
   .modal-dialog-centered {
     min-height: calc(100% - 3.5rem); }
     .modal-dialog-centered::before {
-      height: calc(100vh - 3.5rem);
-      height: -webkit-min-content;
-      height: -moz-min-content;
-      height: min-content; }
+      height: calc(100vh - 3.5rem); }
   .modal-sm {
     max-width: 300px; } }
 
@@ -4451,7 +4450,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .text-break {
   word-break: break-word !important;
-  word-wrap: break-word !important; }
+  overflow-wrap: break-word !important; }
 
 .text-reset {
   color: inherit !important; }
@@ -4710,6 +4709,9 @@ button, a.button {
   .more-link.ttn:after {
     position: relative;
     top: 2px; }
+  @media (max-width: 760px) {
+    .more-link {
+      display: block; } }
   .more-link:after {
     content: "\f30b";
     font-family: "Font Awesome 5 Free";
