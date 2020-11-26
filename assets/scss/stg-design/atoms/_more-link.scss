@@ -5,14 +5,11 @@
   font-weight: 600;
   line-height: 18px;
   text-transform: uppercase;
+  display: block;
   //center arrow when not uppercase
   &.ttn:after{
     position: relative;
     top: 2px;
-  }
-
-  @media (max-width: 760px) {
-    display: block;
   }
 
   &:after {

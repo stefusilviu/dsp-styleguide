@@ -4705,13 +4705,11 @@ button, a.button {
   font-size: 14px;
   font-weight: 600;
   line-height: 18px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  display: block; }
   .more-link.ttn:after {
     position: relative;
     top: 2px; }
-  @media (max-width: 760px) {
-    .more-link {
-      display: block; } }
   .more-link:after {
     content: "\f30b";
     font-family: "Font Awesome 5 Free";
