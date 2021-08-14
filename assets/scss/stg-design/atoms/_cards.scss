@@ -3,7 +3,7 @@
   padding: 30px 15px;
   box-shadow: $small-shadow;
   background: $white;
-  word-wrap: break-word;
+  word-wrap: break-word !important;
   .title {
     line-height: 20px;
   }
