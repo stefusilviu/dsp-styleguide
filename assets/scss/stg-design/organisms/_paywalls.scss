@@ -196,7 +196,11 @@ h1{
     height:230px;
   }
 }
-
+@media screen and (max-width: 300px){
+  .card-paywall{
+    height:250px;
+  }
+}
 .hidden{
   display:none !important;
 }
@@ -217,43 +221,6 @@ h1.logo{
   margin:0 !important;
 }
 
-.masthead > ul{
-  margin-left:0;
-}
-.masthead-container{
-  display:flex;
-  width:260px;
-  margin:0;
-  align-items:center;
-}
-.masthead-links{
-  display:flex;
-  justify-content:flex-start;
-  width:400px;
-  margin:0;
-  flex-direction:row;
-  align-items:center;
-  margin-left:7px;
-  padding:0px;
-}
-.masthead-links li{
-  padding:0px 4px;
-  max-width:40%;
-  display:block;
-  margin:0;
-  line-height:41.5px;
-}
-
-#masthead{
-  display:flex;
-  justify-content:flex-start;
-  flex-direction:row;
-  align-items:center;
-  width:100%;
-}
-
-
-
 #signin-btn-container{
   display:flex;
   margin-left:auto;
@@ -263,16 +230,7 @@ h1.logo{
   list-style-type: none;
 }
 
-@media (max-width: 1200px) {
-  #masthead{
-    display:flex;
-    flex-direction:column;
-  }
-  .masthead-links{
-    justify-content:center;
-    margin:0;
-  }
-  
+@media (max-width: 1200px) {  
   #signin-btn-container{
     display:flex;
     justify-content:center;
@@ -292,9 +250,3 @@ h1.logo{
   margin-top:3px;
   font-weight:bold;
 }
-
-
-
-
-
-
