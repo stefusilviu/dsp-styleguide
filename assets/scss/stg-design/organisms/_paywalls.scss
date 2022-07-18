@@ -77,6 +77,7 @@ div>.offer-button{
   justify-content:center;
 }
 .offer-button{
+  border-radius:4px;
   font-size:15px;
   text-transform:uppercase;
   margin:auto;
@@ -169,12 +170,15 @@ h1{
 .topper{
   color:#31409F;
   font-weight:bold;
-  font-size:20px;
   text-align:center;
   margin:0;
   margin-top:-50px;
   margin-bottom:30px;
   font-style:'Noto Sans'
+}
+.topper > p{
+  font-size:20px;
+  font-family:'Noto Sans'
 }
 
 @media screen and (max-width: 1130px) {
@@ -186,7 +190,7 @@ h1{
     width:80%;
   }
   .topper{
-    margin-bottom:10px;
+    margin-bottom:20px;
     margin-top:-40px;
   }
   .topper > p{
@@ -198,10 +202,7 @@ h1{
     width:110%;
     text-align:center;
   }
-  .long-card{
-    height:270px !important;
-    margin-bottom:50px !important;
-  }
+
   .card-paywall {
     width: 358px;
     height: 207px;
@@ -222,6 +223,10 @@ h1{
   .offer-paywall-description {
     margin-bottom: 10px; 
   } 
+  .long-card{
+    height:263px;
+    margin-bottom:50px;
+  }
 }
 
 
