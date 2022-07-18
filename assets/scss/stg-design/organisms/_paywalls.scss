@@ -33,7 +33,7 @@
 
 
 
-    
+
 
 .swg-card{
   margin-top:8px;
@@ -51,32 +51,36 @@
 
 .page-title{
   font-size:2rem;
-  color:#222222;
-  font-weight:700;
-  font-style:'Noto Sans';
+  color:#242424;
+  font-weight:bold;
+  font-family:'Noto Sans';
   text-align:center;
   margin:auto;
   margin-top:1em;
+  margin-bottom:5px;
 }
 
 .upsell-text{
   display:block;
   color:#222222;
-  font-size:16px;
-  font-weight:600;
+  font-size:20px;
+  font-weight:bold;
   font-family:'Noto Sans';
   margin:auto;
   text-align:center;
-  margin-top:20px;
+  margin-top:40px;
   text-align:center;
+  color:#31409F;
 }
 div>.offer-button{
   display:flex;
   justify-content:center;
 }
 .offer-button{
+  font-size:15px;
+  text-transform:uppercase;
   margin:auto;
-  width:196.22px;
+  width:155px;
   height:40px;
   line-height: 40px;
   background-color:#31409F;
@@ -89,43 +93,41 @@ div>.offer-button{
 
 .offer-subtext2{
   margin:auto;
-  color:#31409F;
-  font-size:14px;
-  font-weight:400;
+  color:#222222;
+  font-size:15px;
   font-family:'Noto Sans';
-  margin-bottom:20px;
+  margin-bottom:14px;
   text-align:center;
+  margin-top:-3px;
+  font-weight:600;
 }
 
 .offer-subtext1{
   margin:auto;
   color:#31409F;
   font-family:'Noto Sans';
-  font-weight:700;
-  font-size:18px;
-  margin-bottom:5px;
+  font-weight:bold;
+  font-size:26px;
 }
 .offer-title{
-  margin-bottom:20px;
+  margin-bottom:15px;
   color:#222222;
   font-family:'Noto Sans';
-  font-weight:700;
   font-size:18px;
 }
 .cards-container{
-  max-width:1040px;
+  max-width:1920px;
   justify-content:space-evenly;
 }
 
 .card-paywall {
-  margin:8px;
+  margin:13px;
   padding: 15px;
   box-shadow: 0 1px 2px 0 rgba(34, 34, 34, 0.2), 0 1px 5px 0 rgba(34, 34, 34, 0.13);
   background: #fff; 
   display:flex;
-  /* height:207.4px; */
-  /* height:auto; */
-  height:215px;
+  height:207px;
+  max-width:588px;
 }
 
 .offer-paywall-description{
@@ -136,7 +138,7 @@ div>.offer-button{
   font-family:"Noto Sans";
   width:90%;
   margin:auto;
-  margin-bottom:35px;
+  margin-bottom:45px;
 }
 h1{
   text-align:center;
@@ -164,57 +166,82 @@ h1{
   font-size:1rem;
 }
 
-@media screen and (max-width:1035px){
-  .card-paywall{
-    max-width:450px;
-    height:215px;
-    margin:auto;
-    margin-bottom:16px;
-    margin-top:16px;
-  }
-  .row{
-    flex-direction:column;
-  }
-  .offer-paywall-description{
-    margin-bottom:10px;
-  }
+.topper{
+  color:#31409F;
+  font-weight:bold;
+  font-size:20px;
+  text-align:center;
+  margin:0;
+  margin-top:-50px;
+  margin-bottom:30px;
+  font-style:'Noto Sans'
 }
+
+@media screen and (max-width: 1130px) {
+
+  .upsell-text{
+    width:35%;
+    font-size:16px;
+    margin-top:-5px;
+    width:80%;
+  }
+  .topper{
+    margin-bottom:10px;
+    margin-top:-40px;
+  }
+  .topper > p{
+    font-size:16px;
+  }
+  .agreement{
+    margin-left:-15px;
+    font-size:14px;
+    width:110%;
+    text-align:center;
+  }
+  .long-card{
+    height:270px !important;
+    margin-bottom:50px !important;
+  }
+  .card-paywall {
+    width: 358px;
+    height: 207px;
+    margin: 20px auto;
+    flex:none;
+  }
+  .title-img {
+    margin: 0 auto; 
+    margin-bottom:15px;
+  }
+  .title-text {
+    margin-top:5px;
+    margin-bottom: 20px; 
+    display:inline-block;
+  }
+  .row {
+    flex-direction: column; }
+  .offer-paywall-description {
+    margin-bottom: 10px; 
+  } 
+}
+
 
 @media screen and (max-width:768px){
-  .card-paywall{
-    max-width:400px;
-    height:215px;
-  }
   .offer-paywall-description{
     margin:auto;
   }
 }
 
-@media screen and (max-width: 500px){
-  .card-paywall{
-    max-width:350px;
-    height:230px;
-  }
-}
 @media screen and (max-width: 300px){
   .card-paywall{
     height:250px;
+    width:280px;
   }
 }
 .hidden{
   display:none !important;
 }
 
-.topper{
-  color:#31409F;
-  font-weight:bold;
-  font-size:14px;
-  text-align:center;
-  margin:0;
-  margin-top:-35px;
-  margin-bottom:18.5px;
-  font-style:'Noto Sans'
-}
+
 
 h1.logo{
   width:260px;
@@ -241,12 +268,26 @@ h1.logo{
 
 #signin-btn-text{
   color:#31409F;
-  font-family:'Noto Sans'
+  font-family:'Noto Sans';
 }
 .agreement{
+  font-family:'Noto Sans';
+  display:block;
   text-align:center;
-  font-size:10px;
-  display:inline-block;
-  margin-top:3px;
-  font-weight:bold;
+  font-size:15px;
+  margin-top:35px;
+}
+.subscriber-agreement{
+  font-weight:normal;
+  text-decoration:underline;
+}
+.privacy-policy{
+  font-weight:normal;
+  text-decoration:underline;
+}
+.title-text{
+  margin-right:5px;
+}
+.title-img{
+  margin-left:5px;
 }
