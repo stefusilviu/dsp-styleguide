@@ -104,7 +104,7 @@ div>.offer-button{
 }
 
 .offer-subtext1{
-  margin:auto;
+  margin:0 auto;
   color:#31409F;
   font-family:'Noto Sans';
   font-weight:bold;
@@ -190,7 +190,7 @@ h1{
     width:80%;
   }
   .topper{
-    margin-bottom:20px;
+    margin-bottom:26px;
     margin-top:-40px;
   }
   .topper > p{
@@ -224,7 +224,7 @@ h1{
     margin-bottom: 10px; 
   } 
   .long-card{
-    height:263px;
+    height:269px;
     margin-bottom:50px;
   }
 }
@@ -238,9 +238,13 @@ h1{
 
 @media screen and (max-width: 300px){
   .card-paywall{
-    height:250px;
+    height:205px;
     width:280px;
   }
+  .long-card{
+    height:266px;
+  }
+
 }
 .hidden{
   display:none !important;
@@ -295,4 +299,10 @@ h1.logo{
 }
 .title-img{
   margin-left:5px;
+}
+.card-content{
+  margin-top:-21px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
 }
