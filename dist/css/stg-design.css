@@ -8608,6 +8608,10 @@ h1 {
   font-family: 'Noto Sans'; }
 
 @media screen and (max-width: 1130px) {
+  .card-elnuevo > .offer-subtext1 {
+    font-size: 23px; }
+  .card-elnuevo > .offer-subtext2 {
+    font-size: 14px; }
   .upsell-text {
     width: 35%;
     font-size: 16px;
@@ -8648,6 +8652,10 @@ h1 {
     margin: auto; } }
 
 @media screen and (max-width: 300px) {
+  .card-elnuevo > .offer-subtext1 {
+    font-size: 17px; }
+  .card-elnuevo > .offer-subtext2 {
+    font-size: 12px; }
   .card-paywall {
     height: 205px;
     width: 280px; }
