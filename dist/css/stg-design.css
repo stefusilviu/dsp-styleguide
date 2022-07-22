@@ -8485,13 +8485,13 @@ summary,
   margin-bottom: 20px; }
 
 .page-title {
-  font-size: 2rem;
+  font-size: 32px;
   color: #242424;
   font-weight: bold;
   font-family: 'Noto Sans';
   text-align: center;
   margin: auto;
-  margin-top: 1em;
+  margin-top: 20px;
   margin-bottom: 5px; }
 
 .upsell-text {
@@ -8502,7 +8502,6 @@ summary,
   font-family: 'Noto Sans';
   margin: auto;
   text-align: center;
-  margin-top: 40px;
   text-align: center;
   color: #31409F; }
 
@@ -8533,7 +8532,7 @@ div > .offer-button {
   margin-bottom: 14px;
   text-align: center;
   margin-top: -3px;
-  font-weight: 600; }
+  font-weight: medium; }
 
 .offer-subtext1 {
   margin: 0 auto;
@@ -8546,7 +8545,10 @@ div > .offer-button {
   margin-bottom: 15px;
   color: #222222;
   font-family: 'Noto Sans';
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: medium;
+  text-align: center;
+  line-height: 20px; }
 
 .cards-container {
   max-width: 1920px;
@@ -8559,17 +8561,19 @@ div > .offer-button {
   background: #fff;
   display: flex;
   height: 207px;
-  max-width: 588px; }
+  max-width: 588px;
+  display: flex; }
 
 .offer-paywall-description {
-  font-size: 1.1rem;
+  font-size: 15px;
   font-weight: 400;
   color: #222222;
   text-align: center;
   font-family: "Noto Sans";
   width: 90%;
   margin: auto;
-  margin-bottom: 45px; }
+  margin-bottom: 45px;
+  padding: 0; }
 
 h1 {
   text-align: center;
@@ -8607,7 +8611,16 @@ h1 {
   font-size: 20px;
   font-family: 'Noto Sans'; }
 
+.card-ncinsider {
+  height: 170px;
+  margin-top: -20px; }
+
+.offer-subtext1-ncinsider {
+  margin-bottom: 18px; }
+
 @media screen and (max-width: 1130px) {
+  .card-ncinsider {
+    margin-top: 20px; }
   .card-elnuevo > .offer-subtext1 {
     font-size: 23px; }
   .card-elnuevo > .offer-subtext2 {
@@ -8615,7 +8628,7 @@ h1 {
   .upsell-text {
     width: 35%;
     font-size: 16px;
-    margin-top: -5px;
+    margin-top: 0;
     width: 80%; }
   .topper {
     margin-bottom: 26px;
@@ -8642,14 +8655,26 @@ h1 {
   .row {
     flex-direction: column; }
   .offer-paywall-description {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    max-width: 360px; }
   .long-card {
     height: 269px;
     margin-bottom: 50px; } }
 
 @media screen and (max-width: 768px) {
+  #masthead-nav-head-contact-link, #masthead-nav-head-phone-number-link {
+    font-size: 12px; }
+  .vertical-bar {
+    margin: 0 !important;
+    font-size: 12px !important; }
   .offer-paywall-description {
-    margin: auto; } }
+    font-size: 16px; }
+  .masthead-container {
+    height: 45px;
+    margin-top: 10px; }
+  .img-responsive {
+    height: 45;
+    width: 300; } }
 
 @media screen and (max-width: 300px) {
   .card-elnuevo > .offer-subtext1 {
@@ -8714,6 +8739,17 @@ h1.logo {
   display: flex;
   flex-direction: column;
   justify-content: center; }
+
+#masthead > * {
+  font-family: 'Noto Sans';
+  font-size: 14px; }
+
+#account-signin-btn, #masthead-nav-head-contact-link, #masthead-nav-head-phone-number-link {
+  font-weight: bold; }
+
+.masthead-links > li {
+  margin-left: 0;
+  margin-right: 0; }
 
 /* Text Color */
 .black {
