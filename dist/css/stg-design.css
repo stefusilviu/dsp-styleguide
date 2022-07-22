@@ -6,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
-@import url(https://fonts.googleapis.com/css?family=Noto+Sans:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans:300,400,500,600,700);
 *,
 *::before,
 *::after {
@@ -8532,7 +8532,7 @@ div > .offer-button {
   margin-bottom: 14px;
   text-align: center;
   margin-top: -3px;
-  font-weight: medium; }
+  font-weight: 500; }
 
 .offer-subtext1 {
   margin: 0 auto;
@@ -8546,7 +8546,7 @@ div > .offer-button {
   color: #222222;
   font-family: 'Noto Sans';
   font-size: 18px;
-  font-weight: medium;
+  font-weight: 500;
   text-align: center;
   line-height: 20px; }
 
