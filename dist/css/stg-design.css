@@ -8722,7 +8722,7 @@ h1.logo {
   display: block;
   text-align: center;
   font-size: 15px;
-  margin-top: 35px;
+  margin-top: 45px;
   font-weight: 500; }
 
 .subscriber-agreement {
@@ -8737,7 +8737,9 @@ h1.logo {
   margin-right: 5px; }
 
 .title-img {
-  margin-left: 5px; }
+  margin-left: 5px;
+  position: relative;
+  top: -17px; }
 
 .card-content {
   margin-top: -21px;
@@ -8755,6 +8757,29 @@ h1.logo {
 .masthead-links > li {
   margin-left: 0;
   margin-right: 0; }
+
+.title-text-long-card {
+  display: inline-block;
+  position: relative;
+  top: -17px; }
+
+.plus-sign {
+  position: relative;
+  top: -17px;
+  margin-left: 10px; }
+
+.long-card > .offer-title {
+  height: 28px; }
+
+@media screen and (max-width: 1130px) {
+  .long-card > .offer-title {
+    height: 89px; }
+  .title-text-long-card {
+    position: static; }
+  .plus-sign {
+    position: static; }
+  .agreement {
+    margin-top: 32px; } }
 
 /* Text Color */
 .black {
